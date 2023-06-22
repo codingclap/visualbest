@@ -3,7 +3,11 @@ body{
   }
   
   :root{
-   
+   --black:#000;
+   --white:#fff;
+   --blue:#4193d1;
+   --primary:#ffc514;
+   --primary2:#d4af37; 
   }
   @font-face {
     font-family: spring;
@@ -28,6 +32,16 @@ body{
   }
   
   /********** Default Color *********/
+  
+  [data-bgcolor="white"] {
+    background-color:#fff;
+  }
+  [data-bgcolor="blue"] {
+    background-color:#4193d1;
+  }
+  [data-color="black"] {
+    color:#00000;
+  }
   [data-color="primary"] {
     color:#ffc514;
   }
@@ -36,14 +50,6 @@ body{
     background-color:#d4af37;
   }
 
-  [data-bgcolor="primary3"] {
-    background-color:#4193d1;
-  }
- 
-  
-  [data-color="secondary"] {
-    color:#00000;
-  }
   /********** Default Color *********/
   
   /********** Default Heading *********/
@@ -71,8 +77,14 @@ body{
   [data-heading="2em"] {
     font-size: 2em;
   }
-  [data-heading="1.8em"] {
-    font-size: 1.8em;
+  [data-heading="1.6em"] {
+    font-size: 1.6em;
+  }
+  [data-heading="1.5em"] {
+    font-size: 1.5em;
+  }
+  [data-heading="1.4em"] {
+    font-size: 1.4em;
   }
   /********** Default Heading *********/
   
@@ -85,6 +97,9 @@ body{
   }
   [data-para="18px"] {
     font-size: 18px;
+  }
+  [data-para="17px"] {
+    font-size: 17px;
   }
   [data-para="1.4em"] {
     font-size: 1.4em;
@@ -125,7 +140,7 @@ body{
       font-size: 15px;
     }
     [data-para="18px"] {
-      font-size: 15px;
+      font-size: 14px;
     }
   }
   

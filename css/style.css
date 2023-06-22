@@ -41,8 +41,8 @@
 }
 
 #section-1 .banner-slider-page {
-  background: rgba(204, 204, 204, 0);
-  border: 2px solid black;
+  background: var(--white);
+  border: 2px solid var(--black);
   border-radius: 50%;
   display: inline-block;
   height: 19px;
@@ -54,7 +54,7 @@
 }
 
 #section-1 .banner-slider-page.is-active {
-  background: #000;
+  background:var(--black);
   transform: inherit;
 }
 
@@ -66,7 +66,7 @@
   position: absolute;
   top: 60%;
   right: 0;
-  background-color: #000;
+  background-color:var(--black);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -80,7 +80,7 @@
 #section-1 .banner-slider .btn_box {
   display: flex;
   flex-direction: column;
-  color: #fff;
+  color:var(--white);
 }
 
 #section-1 .banner-slider .btn_box img{
@@ -132,13 +132,13 @@
 
 #section-2 .num-box span:first-child {
   font-family: popping-semibold;
-  color: #fff;
+  color:var(--white);
   font-size: 3em;
 }
 
 #section-2 .num-box span:last-child {
   font-family: popping-semibold;
-  color: #fff;
+  color:var(--white);
   font-size: 16px;
   text-align: center;
 }
@@ -161,6 +161,32 @@
     gap: 2em;
 }
 
+#section-3 .icons-container .custom-btn{
+ text-decoration: none;
+ color:var(--black);
+ position: relative;
+}
+#section-3 .icons-container .custom-btn:after{
+  position:absolute;
+  content: "";
+  width:36px;
+  height:35px; 
+  background-image: url('../images/link-arrow-with-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left:10px; 
+  top: -5px;
+}
+
+#section-3 .icons-container .icons-box{
+  width:100%;
+  max-width: 100px;
+}
+
+#section-3 .icons-container .icons-heading{
+  width:100%;
+  max-width: 700px;
+}
 /*
 ##########################
 ### Section 3 - End
