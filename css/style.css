@@ -1,0 +1,214 @@
+/*
+##########################
+### Section 1
+##########################
+*/
+#section-1 .banner-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 4em;
+}
+
+#section-1 .carousel-indicators [data-bs-target] {
+  width: 13px;
+  height: 13px;
+  background-color: #234;
+  border-radius: 50%;
+}
+
+#section-1 .banner-text {
+  width: 100%;
+  max-width: 780px;
+}
+
+#section-1 .banner-text h2 {
+  line-height: 1em;
+}
+
+#section-1 .banner-slider {
+  width: 100%;
+  max-width: 420px;
+}
+
+#section-1 .banner-slider-pagination {
+  bottom: -3em;
+  left: 0;
+  padding: 0 1em;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+#section-1 .banner-slider-page {
+  background: rgba(204, 204, 204, 0);
+  border: 2px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  height: 19px;
+  margin: 5px 5px 5px 5px;
+  opacity: 1;
+  padding: 0;
+  transition: transform .2s linear;
+  width: 19px;
+}
+
+#section-1 .banner-slider-page.is-active {
+  background: #000;
+  transform: inherit;
+}
+
+#section-1 .banner-slider li.splide__slide {
+  position: relative;
+}
+
+#section-1 .banner-slider .splide_btn {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 35px;
+  border-radius: 60px;
+  gap: 23px;
+  cursor: pointer;
+}
+
+#section-1 .banner-slider .btn_box {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+#section-1 .banner-slider .btn_box img{
+  width:80%;
+}
+#section-1 .banner-slider .btn_box span{
+  font-size: 18px;
+}
+#section-1 .banner-slider .btn_box span:first-child {
+  font-family: popping-semibold;
+  text-transform: uppercase;
+}
+
+#section-1 .banner-slider .btn_box span:last-child {
+  font-family: popping-regular;
+}
+
+/*
+##########################
+### Section 1 - End
+##########################
+*/
+
+
+/*
+##########################
+### Section 2
+##########################
+*/
+
+#section-2 .number-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  column-gap: 3em;
+  row-gap: 3em;
+  flex-wrap: wrap;
+}
+
+#section-2 .num-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 180px;
+}
+
+#section-2 .num-box span:first-child {
+  font-family: popping-semibold;
+  color: #fff;
+  font-size: 3em;
+}
+
+#section-2 .num-box span:last-child {
+  font-family: popping-semibold;
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+}
+
+/*
+##########################
+### Section 2 - End
+##########################
+*/
+
+
+
+
+
+
+
+/************ Responsive Media Query ***************/
+@media(max-width:1400px) {
+  #section-2 .number-container {
+    column-gap: 2em;
+    row-gap: 3em;
+  }
+
+  #section-2 .num-box {
+    max-width: 164px;
+  }
+}
+
+@media(max-width:1280px) {
+  body {
+    font-size: 70%;
+  }
+
+  #section-1 .banner-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #section-1 .banner-text {
+    width: 100%;
+    max-width: 530px;
+  }
+
+  #section-1 .banner-slider {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media(max-width:768px) {
+ 
+  #section-1 .banner-slider .btn_box span{
+    font-size: 15px;
+  }
+  #section-1 .banner-slider-pagination {
+    bottom: -2em;
+  }
+}
+
+@media(max-width:632px) {
+  body {
+    font-size: 60%;
+  }
+  #section-1 .banner-slider-pagination {
+    bottom: 0em;
+  }
+
+  #section-1 .banner-text .banner-hero_trigger {
+    text-align: center;
+  }
+}
+
+/********** Banner Area ********/

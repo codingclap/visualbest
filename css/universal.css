@@ -1,0 +1,95 @@
+body{
+    font-size: 100%;
+  }
+  
+  :root{
+   
+  }
+  @font-face {
+    font-family: spring;
+    src: url(../fonts/spring_rain_solid.otf);
+    font-weight: 700;
+     
+  }
+  @font-face {
+    font-family: popping-bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+    font-weight: 700; 
+  }
+  @font-face {
+    font-family: popping-regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-weight: 200;
+  }
+  @font-face {
+    font-family: popping-semibold;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+    font-weight: 400;
+  }
+  
+  /********** Default Color *********/
+  [data-color="primary"] {
+    color:#ffc514;
+  }
+  
+  [data-bgcolor="primary2"] {
+    background-color:#d4af37;
+  }
+
+  [data-bgcolor="primary3"] {
+    background-color:#4193d1;
+  }
+ 
+  
+  [data-color="secondary"] {
+    color:#00000;
+  }
+  /********** Default Color *********/
+  
+  /********** Default Heading *********/
+  [data-heading-1="heading-1"] {
+    font-size: 7em;
+  }
+  [data-heading-2="heading-2"] {
+    font-size: 5em;
+  }
+  [data-heading-3="heading-3"] {
+    font-size: 4em;
+  }
+  [data-heading-4="heading-4"] {
+    font-size: 3em;
+  }
+  /********** Default Heading *********/
+  
+  /********** Default paragraph *********/
+  [data-para-1="para-1"] {
+    font-size: 1.2em;
+  }
+  [data-para-2="para-2"] {
+    font-size: 1.4em;
+  }
+  /********** Default paragraph *********/
+  
+  
+  /********** Font Family - Variable *********/
+  [data-font-style="spring"] {
+    font-family: spring;
+  }
+  [data-font-style="popping-bold"] {
+    font-family: popping-bold;
+  }
+  [data-font-style="popping-regular"] {
+    font-family: popping-regular;
+  }
+  [data-font-style="popping-semibold"] {
+    font-family: popping-semibold;
+  }
+  /********** Font Family - Variable *********/
+  /****** Font Family *******/
+   
+  
+  
+  
+  
+  
+  /****** Font Family ******/
