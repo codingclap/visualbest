@@ -47,27 +47,40 @@ body{
   /********** Default Color *********/
   
   /********** Default Heading *********/
-  [data-heading-1="heading-1"] {
+  [data-heading="7em"] {
     font-size: 7em;
   }
-  [data-heading-2="heading-2"] {
+  [data-heading="5em"] {
     font-size: 5em;
   }
-  [data-heading-3="heading-3"] {
+  [data-heading="4.5em"] {
+    font-size: 4.5em;
+  }
+  [data-heading="4em"] {
     font-size: 4em;
   }
-  [data-heading-4="heading-4"] {
+  [data-heading="3.5em"] {
+    font-size: 3.5em;
+  }
+  [data-heading="3em"] {
     font-size: 3em;
+  }
+  [data-heading="2.5em"] {
+    font-size: 2.5em;
+  }
+  [data-heading="2em"] {
+    font-size: 2em;
   }
   /********** Default Heading *********/
   
   /********** Default paragraph *********/
-  [data-para-1="para-1"] {
-    font-size: 1.2em;
-  }
-  [data-para-2="para-2"] {
+  [data-para="1.4em"] {
     font-size: 1.4em;
   }
+  [data-para="1.2em"] {
+    font-size: 1.2em;
+  }
+ 
   /********** Default paragraph *********/
   
   
