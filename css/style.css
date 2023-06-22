@@ -139,13 +139,28 @@
 #section-2 .num-box span:last-child {
   font-family: popping-semibold;
   color: #fff;
-  font-size: 17px;
+  font-size: 16px;
   text-align: center;
 }
 
 /*
 ##########################
 ### Section 2 - End
+##########################
+*/
+
+/*
+##########################
+### Section 3 - Start
+##########################
+*/
+#section-3 .icons-container{
+  display: flex;
+}
+
+/*
+##########################
+### Section 3 - End
 ##########################
 */
 

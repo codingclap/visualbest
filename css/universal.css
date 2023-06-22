@@ -71,11 +71,26 @@ body{
   [data-heading="2em"] {
     font-size: 2em;
   }
+  [data-heading="1.8em"] {
+    font-size: 1.8em;
+  }
   /********** Default Heading *********/
   
   /********** Default paragraph *********/
+  [data-para="22px"] {
+    font-size: 22px;
+  }
+  [data-para="20px"] {
+    font-size: 20px;
+  }
+  [data-para="18px"] {
+    font-size: 18px;
+  }
   [data-para="1.4em"] {
     font-size: 1.4em;
+  }
+  [data-para="1.3em"] {
+    font-size: 1.3em;
   }
   [data-para="1.2em"] {
     font-size: 1.2em;
@@ -98,9 +113,21 @@ body{
     font-family: popping-semibold;
   }
   /********** Font Family - Variable *********/
+
+
   /****** Font Family *******/
    
-  
+  @media (max-width:766px){
+    [data-para="22px"] {
+      font-size: 16px;
+    }
+    [data-para="20px"] {
+      font-size: 16px;
+    }
+    [data-para="18px"] {
+      font-size: 16px;
+    }
+  }
   
   
   
