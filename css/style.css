@@ -208,6 +208,8 @@
 
   #section-1 .banner-text .banner-hero_trigger {
     text-align: center;
+    width: 83%;
+    margin: 0 auto;
   }
 }
 
