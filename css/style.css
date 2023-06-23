@@ -189,23 +189,38 @@
 }
 
  
-main{
+#section-3 .scroll-container{
   height: 647px;
   overflow-x: hidden; 
   position: sticky;
   top:0;
 }
  
-#section-3 main::-webkit-scrollbar {
+#section-3 .scroll-container::-webkit-scrollbar {
   display: none;
 }
-#section-3 .scroll-container:after{
-  
+.left{
+  height: fit-content;
+  top: 0px;
 }
-
+ 
 /*
 ##########################
 ### Section 3 - End
+##########################
+*/
+
+
+
+/*
+##########################
+### Section 4 - Start
+##########################
+*/
+
+/*
+##########################
+### Section 4 - End
 ##########################
 */
 
@@ -256,9 +271,14 @@ main{
   #section-1 .banner-slider-pagination {
     bottom: -2em;
   }
+  #section-3 .scroll-container{
+    height: auto;
+    overflow-x: initial;
+  }
 }
 
 @media(max-width:632px) {
+
   body {
     font-size: 65%;
   }
