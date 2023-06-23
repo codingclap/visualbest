@@ -69,6 +69,9 @@ body{
   [data-heading="3.5em"] {
     font-size: 3.5em;
   }
+  [data-heading="3em"] {
+    font-size: 3em;
+  }
 
    /**** Pixels Size ***/
   [data-heading="22px"] {
