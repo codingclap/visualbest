@@ -53,6 +53,7 @@ body{
   /********** Default Color *********/
   
   /********** Default Heading *********/
+   /**** EM Size ***/
   [data-heading="7em"] {
     font-size: 7em;
   }
@@ -68,24 +69,18 @@ body{
   [data-heading="3.5em"] {
     font-size: 3.5em;
   }
-  [data-heading="3em"] {
-    font-size: 3em;
+
+   /**** Pixels Size ***/
+  [data-heading="22px"] {
+    font-size: 22px;
   }
-  [data-heading="2.5em"] {
-    font-size: 2.5em;
+  [data-heading="20px"] {
+    font-size: 20px;
   }
-  [data-heading="2em"] {
-    font-size: 2em;
+  [data-heading="18px"] {
+    font-size: 18px;
   }
-  [data-heading="1.6em"] {
-    font-size: 1.6em;
-  }
-  [data-heading="1.5em"] {
-    font-size: 1.5em;
-  }
-  [data-heading="1.4em"] {
-    font-size: 1.4em;
-  }
+    
   /********** Default Heading *********/
   
   /********** Default paragraph *********/
@@ -140,10 +135,18 @@ body{
       font-size: 15px;
     }
     [data-para="18px"] {
-      font-size: 14px;
+      font-size: 15px;
+    }
+    [data-heading="22px"] {
+      font-size: 22px;
     }
   }
   
+  @media (max-width:500px){
+    [data-heading="22px"] {
+      font-size: 20px;
+    }
+  }
   
   
   

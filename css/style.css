@@ -169,13 +169,13 @@
 #section-3 .icons-container .custom-btn:after{
   position:absolute;
   content: "";
-  width:36px;
-  height:35px; 
+  width:31px;
+  height:30px; 
   background-image: url('../images/link-arrow-with-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   margin-left:10px; 
-  top: -5px;
+  top: -3px;
 }
 
 #section-3 .icons-container .icons-box{
@@ -244,7 +244,7 @@
 
 @media(max-width:632px) {
   body {
-    font-size: 60%;
+    font-size: 65%;
   }
   #section-1 .banner-slider-pagination {
     bottom: 0em;
@@ -252,6 +252,15 @@
 
   #section-1 .banner-text .banner-hero_trigger {
     text-align: center;
+  }
+}
+
+@media(max-width:500px) {
+  body {
+    font-size: 60%;
+  }
+  #section-3 .icons-container .icons-box{
+    max-width: 80px;
   }
 }
 
