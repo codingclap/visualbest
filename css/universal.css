@@ -45,6 +45,9 @@ body{
   [data-color="primary"] {
     color:#ffc514;
   }
+  [data-color="white"] {
+    color:#fff;
+  }
   
   [data-bgcolor="primary2"] {
     background-color:#d4af37;

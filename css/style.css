@@ -190,10 +190,10 @@
 
  
 #section-3 .scroll-container{
-  height: 647px;
-  overflow-x: hidden; 
+  /* height: 647px; */
+  /* overflow-x: hidden; 
   position: sticky;
-  top:0;
+  top:0; */
 }
  
 #section-3 .scroll-container::-webkit-scrollbar {
@@ -217,7 +217,15 @@
 ### Section 4 - Start
 ##########################
 */
-
+#section-4 .verticle-box .ver-box{
+  position: relative;
+}
+#section-4 .verticle-box .ver-box h6{
+  position: absolute;
+  top:20px;
+  left:20px;
+  font-size: 18px;
+}
 /*
 ##########################
 ### Section 4 - End
