@@ -234,7 +234,7 @@
 }
 
 .bg-image {
-  background-image: url(../images/girl.png);
+  background-image: url(../images/girl.webp);
   background-size: cover;
   background-repeat: no-repeat; 
 }
