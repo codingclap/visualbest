@@ -54,7 +54,7 @@
 }
 
 #section-1 .banner-slider-page.is-active {
-  background:var(--black);
+  background: var(--black);
   transform: inherit;
 }
 
@@ -66,7 +66,7 @@
   position: absolute;
   top: 60%;
   right: 0;
-  background-color:var(--black);
+  background-color: var(--black);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -80,15 +80,17 @@
 #section-1 .banner-slider .btn_box {
   display: flex;
   flex-direction: column;
-  color:var(--white);
+  color: var(--white);
 }
 
-#section-1 .banner-slider .btn_box img{
-  width:76%;
+#section-1 .banner-slider .btn_box img {
+  width: 76%;
 }
-#section-1 .banner-slider .btn_box span{
+
+#section-1 .banner-slider .btn_box span {
   font-size: 16px;
 }
+
 #section-1 .banner-slider .btn_box span:first-child {
   font-family: popping-semibold;
   text-transform: uppercase;
@@ -132,13 +134,13 @@
 
 #section-2 .num-box span:first-child {
   font-family: popping-semibold;
-  color:var(--white);
+  color: var(--white);
   font-size: 3em;
 }
 
 #section-2 .num-box span:last-child {
   font-family: popping-semibold;
-  color:var(--white);
+  color: var(--white);
   font-size: 16px;
   text-align: center;
 }
@@ -154,56 +156,58 @@
 ### Section 3 - Start
 ##########################
 */
-#section-3 .icons-container{
+#section-3 .icons-container {
   display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2em;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
 }
 
-#section-3 .icons-container .custom-btn{
- text-decoration: none;
- color:var(--black);
- position: relative;
+#section-3 .icons-container .custom-btn {
+  text-decoration: none;
+  color: var(--black);
+  position: relative;
 }
-#section-3 .icons-container .custom-btn:after{
-  position:absolute;
+
+#section-3 .icons-container .custom-btn:after {
+  position: absolute;
   content: "";
-  width:31px;
-  height:30px; 
+  width: 31px;
+  height: 30px;
   background-image: url('../images/link-arrow-with-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left:10px; 
+  margin-left: 10px;
   top: -3px;
 }
 
-#section-3 .icons-container .icons-box{
-  width:100%;
+#section-3 .icons-container .icons-box {
+  width: 100%;
   max-width: 100px;
 }
 
-#section-3 .icons-container .icons-heading{
-  width:100%;
+#section-3 .icons-container .icons-heading {
+  width: 100%;
   max-width: 700px;
 }
 
- 
-#section-3 .scroll-container{
+
+#section-3 .scroll-container {
   /* height: 647px; */
   /* overflow-x: hidden; 
   position: sticky;
   top:0; */
 }
- 
+
 #section-3 .scroll-container::-webkit-scrollbar {
   display: none;
 }
-.left{
+
+.left {
   height: fit-content;
   top: 0px;
 }
- 
+
 /*
 ##########################
 ### Section 3 - End
@@ -217,15 +221,24 @@
 ### Section 4 - Start
 ##########################
 */
-#section-4 .verticle-box .ver-box{
+#section-4 .verticle-box .ver-box {
   position: relative;
 }
-#section-4 .verticle-box .ver-box h6{
+
+#section-4 .verticle-box .ver-box h6 {
   position: absolute;
-  top:20px;
-  left:20px;
+  top: 0px;
+  left: 0px;
+  padding: 10px 20px;
   font-size: 18px;
 }
+
+.bg-image {
+  background-image: url(../images/girl.png);
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
 /*
 ##########################
 ### Section 4 - End
@@ -270,16 +283,18 @@
     max-width: 350px;
   }
 }
-
-@media(max-width:768px) {
  
-  #section-1 .banner-slider .btn_box span{
+@media(max-width:768px) {
+
+  #section-1 .banner-slider .btn_box span {
     font-size: 15px;
   }
+
   #section-1 .banner-slider-pagination {
     bottom: -2em;
   }
-  #section-3 .scroll-container{
+
+  #section-3 .scroll-container {
     height: auto;
     overflow-x: initial;
   }
@@ -290,6 +305,7 @@
   body {
     font-size: 65%;
   }
+
   #section-1 .banner-slider-pagination {
     bottom: 0em;
   }
@@ -303,7 +319,8 @@
   body {
     font-size: 60%;
   }
-  #section-3 .icons-container .icons-box{
+
+  #section-3 .icons-container .icons-box {
     max-width: 80px;
   }
 }

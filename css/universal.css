@@ -32,26 +32,35 @@ body{
   }
   
   /********** Default Color *********/
-  
+  /*** BG Color **/
   [data-bgcolor="white"] {
     background-color:#fff;
   }
   [data-bgcolor="blue"] {
     background-color:#4193d1;
   }
+  [data-bgcolor="primary"] {
+    background-color:#ffc514;
+  }
+  [data-bgcolor="primary2"] {
+    background-color:#d4af37;
+  }
+
+  /** Color **/
   [data-color="black"] {
     color:#00000;
   }
   [data-color="primary"] {
     color:#ffc514;
   }
+  [data-color="primary2"] {
+    color:#d4af37;
+  }
+  
   [data-color="white"] {
     color:#fff;
   }
   
-  [data-bgcolor="primary2"] {
-    background-color:#d4af37;
-  }
 
   /********** Default Color *********/
   

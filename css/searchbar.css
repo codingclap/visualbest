@@ -576,19 +576,17 @@ a:hover {
     border:1px solid #8c8a89;
     font-family: popping-regular;
 }
-.homepage-hero .button--primary {
-    background: #1c1b1a;
-    border-color: #1c1b1a;
-}
-.button--jumbo {
-    font-family: Larsseit-Bold,sans-serif;
-    font-size: 19px;
-    border-radius: 999px;
-    border-width: 1px;
-}
+ 
 .button--primary {
     background-color: #ffc514;
     border-color: #ffc514;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.button--secondary {
+    background-color: #fff;
+    border-color: #fff;
     color: #000000;
     text-decoration: none;
     font-weight: bold;
@@ -607,7 +605,7 @@ a:hover {
     padding: 0;
     text-align: center;
 }
-.button--jumbo .button__inner {
+.button__inner {
     min-height: 54px;
     display: flex;
     align-items: center;
