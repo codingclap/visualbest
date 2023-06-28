@@ -60,7 +60,10 @@ body{
   [data-bgcolor="primary2"] {
     background-color:#d4af37;
   }
-
+  [data-bgcolor="dark"] {
+    background-color:#2b2a2b;
+  }
+  
   /** Color **/
   [data-color="black"] {
     color:#00000;
