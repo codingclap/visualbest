@@ -299,7 +299,8 @@ color:#000000;
  
 #section-6 .tabs-details ul li {
   background: url(../images/bullets.png) no-repeat top left;
-  background-position: 0 6px;
+  background-position: 0 8px;
+  background-size: 11px;
   line-height: 1.5625;
   padding: 0 0 4px 23px;
 }
