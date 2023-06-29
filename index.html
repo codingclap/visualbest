@@ -603,10 +603,31 @@
     }
 
     #section-7 .pagination-bottom {
+      font-family: popping-semibold;
       font-size: 0px;
+      bottom: -3em;
+      left: 0;
+      padding: 0 1em;
+      position: absolute;
+      right: 0;
+      z-index: 1; 
+    }
+
+     
+
+    #section-7 .pagination-bottom span {
+      display: inline-block;
+      line-height: 1;
+      list-style-type: none;
+      margin: 0;
+      width:19px;
+      height:19px;
+      pointer-events: auto;
+     
     }
 
     #section-7 .pagination-top {
+      font-family: popping-semibold;
       position: absolute;
       top: 0px;
       right: 10px;
@@ -629,16 +650,16 @@
       border-radius: 40px;
       height: 55px;
       line-height: 25px;
-      background-color: #fff;
+      background-color: #ddd9d967;
       padding: 15px;
-      color: #000;
+      color:#cccccc;
       opacity: 1;
-      background: rgba(0, 0, 0, 0.2);
+      
     }
 
     #section-7 .pagination-top .swiper-pagination-bullet-active {
       color: #fff;
-      background: #007aff;
+      background: var(--blue);
     }
 
     @media(max-width:417px) {
@@ -738,7 +759,7 @@
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination pagination-top gap-2 gap-md-5"></div>
-          <div class="swiper-pagination pagination-bottom"></div>
+          <div class="swiper-pagination pagination-bottom d-flex gap-3 justify-content-center align-item-center"></div>
 
 
         </div>
