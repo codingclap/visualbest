@@ -281,6 +281,7 @@ border-top:2px solid #ddd;
 #section-6  .nav-link{
 font-size: 18px;
 color:#000000;
+padding: 0.5em 1em;
 }
 #section-6 .nav-link:focus, .nav-link:hover {
    color: var(--red); 
@@ -307,7 +308,7 @@ color:#000000;
  
 
 #section-6 .tabs-details img{
-  max-width: 400px;
+  max-width: 380px;
 }
 
 /*
@@ -389,7 +390,12 @@ color:#000000;
   body {
     font-size: 60%;
   }
-
+  #section-6 .tabs-details img{
+    max-width: 300px;
+  }
+  #section-6  .nav-link{ 
+    padding: 0.1em 1em;
+    }
   #section-3 .icons-container .icons-box {
     max-width: 80px;
   }
