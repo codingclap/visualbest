@@ -409,6 +409,7 @@
   top: 0px;
   right: 10px;
   margin: 0;
+  height: 0px;
   z-index: +999;
   display: flex;
   justify-content: center;
@@ -444,11 +445,11 @@
   height: 19px;
   pointer-events: auto;
   background-color:#fff;
-  border:2px solid #212529;
+  border:2px solid #000000;
 }
 #section-7 .pagination-bottom .swiper-pagination-bullet-active {
   color: #fff;
-  background: #212529;
+  background: #000000;
 }
 
 #section-7 .pagination-top .swiper-pagination-bullet-active {
@@ -479,6 +480,27 @@
 ##########################
 */
 
+#section-8{
+  background-color: var(--blue);
+}
+#section-8 .home-testimonial{
+
+}
+#section-8 .testimonial-record{
+
+}
+#section-8 .testimonial-record .testi-picture{
+ width: 100%;
+ max-width: 300px;
+}
+#section-8 .testimonial-record .testi-picture img{
+  width:120px;
+ }
+
+#section-8 .testimonial-record .testi-text{
+  width: 100%;
+ max-width: 800px;
+}
 
 
 /*

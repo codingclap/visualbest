@@ -596,7 +596,7 @@
   <!---------------------- Section 6 ---------------------->
 
   <!---------------------- Section 7 ---------------------->
- 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" rel="stylesheet" />
 
@@ -614,7 +614,7 @@
         <!-- Slider main container -->
         <div class="swiper-container">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper py-5 my-5">
+          <div class="swiper-wrapper pt-5 pb-4 my-5">
 
             <!-- Slides 1 -->
             <div class="swiper-slide d-flex flex-column flex-md-row justify-content-center gap-3 gap-md-5">
@@ -685,7 +685,8 @@
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination pagination-top gap-2 gap-md-5"></div>
-          <div class="swiper-pagination pagination-bottom d-flex gap-3 justify-content-center align-item-center"></div>
+          <div class="swiper-pagination pagination-bottom d-flex gap-3 justify-content-center align-item-center pb-3">
+          </div>
         </div>
       </section>
     </div>
@@ -698,10 +699,61 @@
     <div class="container">
       <div class="row text-center">
         <div class="col-12 col-md-12 col-lg-12">
-          <h3 class="text-center" data-heading="3em" data-font-style="popping-bold">Our True Earning - Customer Trust
-          </h3>
+          <h3 class="text-center" data-heading="3em" data-font-style="popping-bold" data-color="white">Our True Earning
+            - Customer Trust</h3>
         </div>
       </div>
+      <section class="splide home-testimonial pt-5" aria-labelledby="carousel-heading">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="testimonial-record d-flex justify-content-center align-item-center gap-5 text-center">
+                <div class="testi-picture text-center">
+                  <img src="./images/brandon-leong.png" alt="image">
+                  <h6 class="pt-3 my-0 py-0" data-font-style="popping-semibold" data-color="white" data-heading="25px" line-height="1.4em">
+                    Brandon Leong</h6>
+                  <p data-font-style="popping-regular" data-para="17px" data-color="white" line-height="1.4em">VP of Marketing & Growth,
+                    Screencastify</p>
+
+                </div>
+                <div class="testi-text text-center">
+                  <h5>Exceptional work!</h5>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="testimonial-record d-flex justify-content-center align-item-center gap-5 text-center">
+                <div class="testi-picture text-center">
+                  <img src="./images/brandon-leong.png" alt="image">
+                  <h6 class="pt-3 my-0 py-0" data-font-style="popping-semibold" data-color="white" data-heading="25px" line-height="1.4em">
+                    Brandon Leong</h6>
+                  <p data-font-style="popping-regular" data-para="17px" data-color="white" line-height="1.4em">VP of Marketing & Growth,
+                    Screencastify</p>
+
+                </div>
+                <div class="testi-text text-center">
+                  <h5>Exceptional work!</h5>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="testimonial-record d-flex justify-content-center align-item-center gap-5 text-center">
+                <div class="testi-picture text-center">
+                  <img src="./images/brandon-leong.png" alt="image">
+                  <h6 class="pt-3 my-0 py-0" data-font-style="popping-semibold" data-color="white" data-heading="25px" line-height="1.4em">
+                    Brandon Leong</h6>
+                  <p data-font-style="popping-regular" data-para="17px" data-color="white" line-height="1.4em">VP of Marketing & Growth,
+                    Screencastify</p>
+
+                </div>
+                <div class="testi-text text-center">
+                  <h5>Exceptional work!</h5>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
   </section>
   <!---------------------- Section 8 ---------------------->
@@ -767,9 +819,9 @@
   </script>
   <!---- Main Slider ---->
 
-  <!---- 5 Reason work Slider---->
+  <!---- section 8 Slider---->
   <script>
-    var splide = new Splide('.splides', {
+    var splide = new Splide('.home-testimonial', {
       type: 'loop',
       autoplay: true,
       rewind: true,
