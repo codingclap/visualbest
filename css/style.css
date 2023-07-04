@@ -466,15 +466,6 @@
   background: var(--blue);
 }
 
-@media(max-width:417px) {
-  #section-7 .pagination-top .swiper-pagination-bullet {
-    width: 50px;
-    border-radius: 40px;
-    height: 48px;
-    line-height: 17px;
-  }
-}
-
 /*
 ##########################
 ### Section 7 - End
@@ -644,6 +635,10 @@
   #section-1 .banner-text .banner-hero_trigger {
     text-align: center;
   }
+
+  #section-7 .pagination-top .swiper-pagination-bullet { 
+    font-size: 20px;
+  }
 }
 
 @media(max-width:500px) {
@@ -662,6 +657,16 @@
   #section-3 .icons-container .icons-box {
     max-width: 80px;
   }
+}
+
+@media(max-width:417px) {
+  #section-7 .pagination-top .swiper-pagination-bullet {
+    width: 50px;
+    border-radius: 40px;
+    height: 48px;
+    line-height: 17px;
+  } 
+ 
 }
 
 /********** Banner Area ********/
