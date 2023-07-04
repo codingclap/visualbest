@@ -144,6 +144,9 @@ body{
   [data-heading="17px"] {
     font-size: 17px;
   }
+  [data-heading="16px"] {
+    font-size: 16px;
+  }
   /********** Default Heading *********/
   
   /********** Default paragraph *********/
@@ -159,6 +162,10 @@ body{
   [data-para="17px"] {
     font-size: 17px;
   }
+  [data-para="16px"] {
+    font-size: 16px;
+  }
+
   [data-para="1.4em"] {
     font-size: 1.4em;
   }
