@@ -321,6 +321,8 @@
 ##########################
 */
 
+
+
 /*
 ##########################
 ### Section 7 - Start
@@ -374,11 +376,122 @@
   background: var(--black);
   transform: inherit;
 }
+
+#section-7 .swiper {
+  width: 100%;
+  height: 100%;
+}
+#section-7  .swiper-pagination-bullet{
+  opacity: 1;
+}
+#section-7 .pagination-bottom {
+  font-family: popping-semibold;
+  font-size: 0px;
+  bottom: -3em;
+  left: 0;
+  padding: 0 1em;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+#section-7 .pagination-bottom span {
+  display: inline-block;
+  line-height: 1;
+  list-style-type: none;
+  margin: 0;
+  width: 19px;
+  height: 19px;
+  pointer-events: auto;
+}
+
+#section-7 .pagination-top {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  margin: 0;
+  z-index: +999;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#section-7 .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+}
+
+#section-7 .pagination-top .swiper-pagination-bullet {
+  width: 55px;
+  font-family: popping-semibold;
+  font-size: 25px;
+  border-radius: 40px;
+  height: 55px;
+  line-height: 25px;
+  background-color: #ddd9d967;
+  padding: 15px;
+  color: #cccccc;
+  opacity: 1;
+
+}
+#section-7 .pagination-bottom .swiper-pagination-bullet {
+  display: inline-block;
+  line-height: 1;
+  list-style-type: none;
+  margin: 0;
+  width: 19px;
+  height: 19px;
+  pointer-events: auto;
+  background-color:#fff;
+  border:2px solid #212529;
+}
+#section-7 .pagination-bottom .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #212529;
+}
+
+#section-7 .pagination-top .swiper-pagination-bullet-active {
+  color: #fff;
+  background: var(--blue);
+}
+
+@media(max-width:417px) {
+  #section-7 .pagination-top .swiper-pagination-bullet {
+    width: 50px;
+    border-radius: 40px;
+    height: 48px;
+    line-height: 17px;
+  }
+}
 /*
 ##########################
 ### Section 7 - End
 ##########################
 */
+
+
+
+
+/*
+##########################
+### Section 8 - Start
+##########################
+*/
+
+
+
+/*
+##########################
+### Section 8 - End
+##########################
+*/
+
+
+
+
+
+
 
 
 /************ Responsive Media Query ***************/
