@@ -601,7 +601,9 @@
       width: 100%;
       height: 100%;
     }
-
+    #section-7  .swiper-pagination-bullet{
+      opacity: 1;
+    }
     #section-7 .pagination-bottom {
       font-family: popping-semibold;
       font-size: 0px;
@@ -610,24 +612,23 @@
       padding: 0 1em;
       position: absolute;
       right: 0;
-      z-index: 1; 
+      z-index: 1;
     }
 
-     
+
 
     #section-7 .pagination-bottom span {
       display: inline-block;
       line-height: 1;
       list-style-type: none;
       margin: 0;
-      width:19px;
-      height:19px;
+      width: 19px;
+      height: 19px;
       pointer-events: auto;
-     
+
     }
 
     #section-7 .pagination-top {
-      font-family: popping-semibold;
       position: absolute;
       top: 0px;
       right: 10px;
@@ -647,14 +648,33 @@
 
     #section-7 .pagination-top .swiper-pagination-bullet {
       width: 55px;
+      font-family: popping-semibold;
+      font-size: 25px;
       border-radius: 40px;
       height: 55px;
       line-height: 25px;
       background-color: #ddd9d967;
       padding: 15px;
-      color:#cccccc;
+      color: #cccccc;
       opacity: 1;
-      
+
+    }
+
+
+    #section-7 .pagination-bottom .swiper-pagination-bullet {
+      display: inline-block;
+      line-height: 1;
+      list-style-type: none;
+      margin: 0;
+      width: 19px;
+      height: 19px;
+      pointer-events: auto;
+      background-color:#fff;
+      border:2px solid #212529;
+    }
+    #section-7 .pagination-bottom .swiper-pagination-bullet-active {
+      color: #fff;
+      background: #212529;
     }
 
     #section-7 .pagination-top .swiper-pagination-bullet-active {
