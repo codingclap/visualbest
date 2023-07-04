@@ -177,22 +177,28 @@ body{
   /****** Font Family *******/
    
   @media (max-width:766px){
+    
+    [data-heading="30px"] {
+      font-size: 25px;
+    }
+     [data-heading="28px"] {
+      font-size: 25px;
+    }
+
 
     [data-para="25px"] {
       font-size: 22px;
     }
     [data-para="22px"] {
-      font-size: 16px;
+      font-size: 17px;
     }
     [data-para="20px"] {
-      font-size: 15px;
+      font-size: 17px;
     }
     [data-para="18px"] {
-      font-size: 15px;
+      font-size: 17px;
     }
-    [data-heading="22px"] {
-      font-size: 22px;
-    }
+    
   }
   
   @media (max-width:500px){
