@@ -1,5 +1,6 @@
 body{
     font-size: 100%;
+    color:#000000;
   }
   
   :root{
@@ -9,6 +10,8 @@ body{
    --primary:#ffc514;
    --primary2:#d4af37;
    --red:#ff6200; 
+   --dark:#2b2a2b;
+   --light-dark:#282828;
   }
   @font-face {
     font-family: spring;
@@ -66,13 +69,16 @@ body{
   
   /** Color **/
   [data-color="black"] {
-    color:#00000;
+    color:#000000;
   }
   [data-color="primary"] {
     color:#ffc514;
   }
   [data-color="primary2"] {
     color:#d4af37;
+  }
+  [data-color="light-dark"] {
+    color:#282828;
   }
   
   [data-color="white"] {

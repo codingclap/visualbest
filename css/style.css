@@ -473,8 +473,6 @@
 */
 
 
-
-
 /*
 ##########################
 ### Section 8 - Start
@@ -482,20 +480,37 @@
 */
 
 #section-8 {
+  background-color: var(--dark);
+}
+/*
+##########################
+### Section 8 - End
+##########################
+*/
+
+
+
+/*
+##########################
+### Section 9 - Start
+##########################
+*/
+
+#section-9 {
   background-color: var(--blue);
 }
 
-#section-8 .home-testimonial {}
+#section-9 .home-testimonial {}
 
-#section-8 .testimonial-record {}
+#section-9 .testimonial-record {}
 
-#section-8 .testimonial-record .testi-picture {
+#section-9 .testimonial-record .testi-picture {
   width: 100%;
   max-width: 300px;
   position: relative;
 }
 
-#section-8 .testimonial-record .testi-picture:after {
+#section-9 .testimonial-record .testi-picture:after {
   position: absolute;
   content: "";
   width: 2px;
@@ -505,16 +520,16 @@
   background-color: rgba(255, 255, 255, 0.763);
 }
 
-#section-8 .testimonial-record .testi-picture img {
+#section-9 .testimonial-record .testi-picture img {
   width: 120px;
 }
 
-#section-8 .testimonial-record .testi-text {
+#section-9 .testimonial-record .testi-text {
   width: 100%;
   max-width: 600px;
 }
 
-#section-8 .testimonial-slider-page {
+#section-9 .testimonial-slider-page {
   background: #fff0;
   border: 2px solid var(--white);
   border-radius: 50%;
@@ -528,7 +543,7 @@
 }
 
 /* Pagination */
-#section-8 .testimonial__pagination {
+#section-9 .testimonial__pagination {
   -ms-flex-align: center;
   align-items: center;
   display: -ms-flexbox;
@@ -543,7 +558,7 @@
   gap: 0.6rem;
 }
 
-#section-8 .testimonial__pagination li {
+#section-9 .testimonial__pagination li {
   display: inline-block;
   line-height: 1;
   list-style-type: none;
@@ -551,7 +566,7 @@
   pointer-events: auto;
 }
 
-#section-8 .testimonial-slider-page.is-active {
+#section-9 .testimonial-slider-page.is-active {
   background: var(--white);
   transform: inherit;
 }
@@ -559,7 +574,7 @@
 
 /*
 ##########################
-### Section 8 - End
+### Section 9 - End
 ##########################
 */
 
@@ -604,7 +619,7 @@
 }
 
 @media(max-width:768px) {
-  #section-8 .testimonial-record .testi-picture:after {
+  #section-9 .testimonial-record .testi-picture:after {
     display: none;
   }
 
