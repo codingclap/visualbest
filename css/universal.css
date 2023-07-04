@@ -123,6 +123,12 @@ body{
   }
 
    /**** Pixels Size ***/
+   [data-heading="30px"] {
+    font-size: 30px;
+  }
+   [data-heading="28px"] {
+    font-size: 28px;
+  }
    [data-heading="25px"] {
     font-size: 25px;
   }
@@ -135,7 +141,9 @@ body{
   [data-heading="18px"] {
     font-size: 18px;
   }
-    
+  [data-heading="17px"] {
+    font-size: 17px;
+  }
   /********** Default Heading *********/
   
   /********** Default paragraph *********/
