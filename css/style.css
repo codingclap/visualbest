@@ -482,6 +482,7 @@
 #section-8 {
   background-color: var(--dark);
 }
+
 /*
 ##########################
 ### Section 8 - End
@@ -570,6 +571,7 @@
   background: var(--white);
   transform: inherit;
 }
+
 /* Pagination */
 
 /*
@@ -579,7 +581,36 @@
 */
 
 
+/*
+##########################
+### Section 10 - Start
+##########################
+*/
+#section-10 {
+  background-color: #f3ecec;
+}
 
+#section-10 .rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-10 .rating-container .rating-box {
+  width: 100%;
+  max-width: 400px;
+}
+
+#section-10 .rating-container .rating-box img {
+  object-fit: contain;
+  aspect-ratio: 3/1;
+}
+
+/*
+##########################
+### Section 10 - End
+##########################
+*/
 
 
 
@@ -622,9 +653,11 @@
   #section-9 .testimonial-record .testi-picture:after {
     display: none;
   }
-  br{
+
+  br {
     display: none;
   }
+
   #section-1 .banner-slider .btn_box span {
     font-size: 15px;
   }
@@ -636,6 +669,10 @@
   #section-3 .scroll-container {
     height: auto;
     overflow-x: initial;
+  }
+
+  #section-10 .rating-container {
+    flex-wrap: wrap;
   }
 }
 
@@ -653,7 +690,7 @@
     text-align: center;
   }
 
-  #section-7 .pagination-top .swiper-pagination-bullet { 
+  #section-7 .pagination-top .swiper-pagination-bullet {
     font-size: 20px;
   }
 }
@@ -682,8 +719,8 @@
     border-radius: 40px;
     height: 48px;
     line-height: 17px;
-  } 
- 
+  }
+
 }
 
 /********** Banner Area ********/
