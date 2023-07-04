@@ -622,7 +622,9 @@
   #section-9 .testimonial-record .testi-picture:after {
     display: none;
   }
-
+  br{
+    display: none;
+  }
   #section-1 .banner-slider .btn_box span {
     font-size: 15px;
   }
