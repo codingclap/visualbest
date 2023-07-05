@@ -635,7 +635,6 @@
 
   #section-1 .banner-flex {
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   #section-1 .banner-text {
@@ -646,6 +645,16 @@
   #section-1 .banner-slider {
     width: 100%;
     max-width: 350px;
+  }
+}
+
+@media(max-width:992px) {
+  #section-1 .banner-flex {
+    justify-content: center;
+  }
+
+  #section-1 .banner-text .banner-hero_trigger {
+    text-align: center;
   }
 }
 
