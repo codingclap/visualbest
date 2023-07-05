@@ -7,9 +7,9 @@ input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-decoration {
     -webkit-appearance: none
 }
- 
 
-  
+
+
 
 .field--with-checkmark[data-field-selected] .field__image:after,
 .icon:before,
@@ -61,31 +61,31 @@ input[type=search]::-webkit-search-decoration {
     -moz-osx-font-smoothing: grayscale
 }
 
-   
- 
+
+
 
 .icon--search-1:before {
     content: " " !important;
     background-image: url('../images/search-icon.png');
     background-size: cover;
-    width:22px;
+    width: 22px;
     height: 22px;
 }
 
-  
 
-.icon--x-3:before { 
+
+.icon--x-3:before {
     content: " " !important;
     background-image: url('../images/close.png');
     background-size: cover;
-    width:15px;
+    width: 15px;
     height: 15px;
 }
-  
+
 a:hover {
     color: #000000;
 }
- 
+
 .icon-button {
     background: 0 0;
     border: 0;
@@ -142,7 +142,7 @@ a:hover {
     color: #969694 !important
 }
 
- 
+
 .icon-button--offset-left {
     margin-left: 10px
 }
@@ -276,11 +276,11 @@ a:hover {
     color: #fff;
     line-height: 1em
 }
- 
-   
 
 
-  
+
+
+
 .input-color:focus,
 .input-date:focus,
 .input-datetime-local:focus,
@@ -299,9 +299,9 @@ a:hover {
     border-color: #1c1b1a;
     outline: 0
 }
- 
-   
-  
+
+
+
 
 .field__input {
     margin-bottom: 15px
@@ -318,7 +318,7 @@ a:hover {
     margin-bottom: 15px;
     line-height: 1.3
 }
- 
+
 
 .field--icon-label>.field__input {
     position: relative
@@ -357,8 +357,8 @@ a:hover {
     color: #ce283d;
     display: block
 }
-  
- 
+
+
 .select {
     font-family: Graphik, sans-serif;
     color: #313030;
@@ -432,7 +432,7 @@ a:hover {
     outline: 0;
     color: #1c1b1a
 }
-  
+
 .menu__item--heading {
     font-weight: 400;
     font-size: 16px;
@@ -478,6 +478,7 @@ a:hover {
 .menu__item--action-list .menu__item__action {
     display: block
 }
+
 .menu__item--separator {
     margin-top: 0.4em;
     margin-bottom: 0.4em;
@@ -486,6 +487,7 @@ a:hover {
     height: 1px;
     background-color: #dad9d7;
 }
+
 .menu__item--action-list .menu__item__action__link {
     border: none;
     border-radius: 0;
@@ -499,14 +501,16 @@ a:hover {
     width: 100%;
     cursor: pointer;
     color: #313030;
-    text-decoration:none;
+    text-decoration: none;
     font-size: 17px;
     font-family: popping-regular;
 }
-::placeholder{
-    color:#858585;
+
+::placeholder {
+    color: #858585;
     font-family: popping-regular;
 }
+
 .menu__item--action-list .menu__item__action__link:focus,
 .menu__item--action-list .menu__item__action__link:hover {
     box-shadow: none;
@@ -519,10 +523,12 @@ a:hover {
     font-size: 12px;
     text-align: right
 }
+
 .menu__item--action-list .menu__item__action__link:hover {
     text-decoration: none;
-    background: linear-gradient(to right,#fff 0,#f6f6f6 35%,#f6f6f6 65%,#fff 100%);
+    background: linear-gradient(to right, #fff 0, #f6f6f6 35%, #f6f6f6 65%, #fff 100%);
 }
+
 .field--homepage-search-input {
     margin-bottom: 0
 }
@@ -563,7 +569,7 @@ a:hover {
     background-color: #fff
 }
 
-.field--homepage-search-input .input-search { 
+.field--homepage-search-input .input-search {
     line-height: 1.3;
     letter-spacing: 0;
     font-size: 17px;
@@ -573,10 +579,10 @@ a:hover {
     padding-right: 36px;
     text-overflow: ellipsis;
     -webkit-appearance: none;
-    border:1px solid #8c8a89;
+    border: 1px solid #8c8a89;
     font-family: popping-regular;
 }
- 
+
 .button--primary {
     background-color: #ffc514;
     border-color: #ffc514;
@@ -584,6 +590,7 @@ a:hover {
     text-decoration: none;
     font-weight: bold;
 }
+
 .button--secondary {
     background-color: #fff;
     border-color: #fff;
@@ -591,13 +598,14 @@ a:hover {
     text-decoration: none;
     font-weight: bold;
 }
+
 .button {
     font-family: popping-semibold;
     font-size: 20px;
     border-radius: 999px;
     border-width: 1px;
     border-style: solid;
-    line-height: 1.3;
+    line-height: initial;
     cursor: pointer;
     display: inline-block;
     vertical-align: middle;
@@ -605,6 +613,7 @@ a:hover {
     padding: 0;
     text-align: center;
 }
+
 .button__inner {
     min-height: 54px;
     display: flex;
@@ -612,7 +621,18 @@ a:hover {
     justify-content: center;
     padding: 12px 30px;
 }
- 
+
+@media(max-width:500px) {
+    
+    .button__inner {
+        padding: 12px 22px;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+}
+
 @media (min-width:900px) and (max-width:1299px) {
     .field--homepage-search-input .input-search {
         width: 325px
@@ -705,7 +725,7 @@ a:hover {
 .contest-examples-paragraph__cta {
     float: right
 }
- 
+
 .cta-pair {
     margin-bottom: 30px
 }
@@ -713,10 +733,10 @@ a:hover {
 .cta-pair__button,
 .cta-pair__link {
     display: inline-block;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 
-  
+
 .cta-pair--stacked .cta-pair__button,
 .cta-pair--stacked .cta-pair__link {
     display: block
@@ -729,5 +749,3 @@ a:hover {
 .cta-pair--no-margin {
     margin-bottom: 0
 }
-
- 

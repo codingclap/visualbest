@@ -233,11 +233,7 @@
   font-size: 18px;
 }
 
-.bg-image {
-  background-image: url(../images/girl.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 
 /*
 ##########################
@@ -253,6 +249,11 @@
 
 #section-5 {}
 
+#section-5 .bg-image {
+  background-image: url(../images/girl.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 /*
 ##########################
 ### Section 5 - End
@@ -611,7 +612,11 @@
 ### Section 10 - End
 ##########################
 */
-
+#section-11 .bg-image {
+  background-image: url(../images/let-supercharge-your\ -visual-communication!.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 
 
@@ -708,7 +713,7 @@
   body {
     font-size: 60%;
   }
-
+   
   #section-6 .tabs-details img {
     max-width: 300px;
   }
