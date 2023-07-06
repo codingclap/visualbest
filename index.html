@@ -1152,8 +1152,8 @@
   <!---------------------- Section 11 ---------------------->
 
   <!---------------------- Section 12 ---------------------->
-   
-  <section id="section-12" class="pt-4 pt-md-5 pb-4 pb-md-5" data-bgcolor="dark">
+
+  <section id="section-12" class="pt-4 pt-md-5 pb-3 pb-md-4" data-bgcolor="dark">
     <div class="container">
       <div class="row text-center pt-4 pb-3 pb-md-4">
         <div class="col-12 col-md-12 col-lg-12">
@@ -1165,13 +1165,29 @@
         </div>
       </div>
       <div class="row">
-        
+        <div class="col-12 overflow-hidden">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/3d-slider-1.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/3d-slider-2.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/3d-slider-3.png" />
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <!---------------------- Section 12 ---------------------->
 
-
+  <!------- Number with bullet Slider ------>
   <script>
     var menu = ['1', '2', '3', '4', '5'];
     var swiper = new Swiper('.swiper-container', {
@@ -1190,6 +1206,44 @@
 
 
   </script>
+  <!------- Number with bullet Slider ------>
+
+
+  <!------- 3D Slider ------>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 2,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 80,
+        depth: 200,
+        modifier: 1, // 2,3
+        slideShadows: true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+
+      breakpoints: { 
+          768: {
+            slidesPerView: 1,
+          
+          },
+        },
+    });
+  </script>
+  <!------- 3D Slider ------>
+
+
+
   <!---- Main Slider ---->
   <script>
     var splide = new Splide('.splide', {
