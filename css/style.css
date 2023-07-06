@@ -641,14 +641,12 @@
 #section-12 .swiper {
   width: 100%;
   padding-top: 0px;
-  padding-bottom: 80px;
-
+  padding-bottom: 0px;
 }
-
+ 
 #section-12 .swiper-slide {
   background-position: center;
-  background-size: cover;
-  width: 600px;
+  background-size: cover; 
   height: auto;
 }
 
@@ -667,7 +665,12 @@
 }
 #section-12 .swiper-pagination-bullet-active{
   background-color:#fff;
-   
+}
+#section-12 .swiper-pagination { 
+  position: inherit;
+  width: 100%;
+  text-align: center; 
+  margin-top: 34px;
 }
 /*
 ##########################

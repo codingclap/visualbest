@@ -1164,7 +1164,7 @@
             exceptional work. Discover why we stand as the epitome of industry acclaim.</p>
         </div>
       </div>
-      <div class="row">
+      <div class="row pb-3">
         <div class="col-12 overflow-hidden">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -1178,9 +1178,10 @@
                 <img src="./images/3d-slider-3.png" />
               </div>
 
-            </div><br>
-            <div class="swiper-pagination"></div>
+            </div> 
+            
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
@@ -1217,12 +1218,13 @@
       centeredSlides: true,
       slidesPerView: 2,
       coverflowEffect: {
-        rotate: 0,
-        stretch: 80,
-        depth: 200,
-        modifier: 1, // 2,3
-        slideShadows: true,
-      },
+            rotate: 0,                      // Rotate of the prev and next slides
+            depth: 200,                     // Depth of the prev and next slides
+            stretch: 30,                    // Space between the slides
+            modifier: 1,                    // Multiply the values of rotate, depth, and stretc
+            scale: 1,                       // Size ratio of the prev and next slides
+            slideShadows: false,            // Presence of shadow on the surfaces of the prev and next slides
+        },
       loop: true,
       autoplay: {
         delay: 3000,
