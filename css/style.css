@@ -641,7 +641,7 @@
 #section-12 .swiper {
   width: 100%;
   padding-top: 0px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 
 }
 
@@ -656,7 +656,20 @@
   display: block;
   width: 100%;
 }
-  /*
+
+#section-12 .swiper-pagination-bullet {
+  width: 19px;
+  height: 19px;
+  border: 2px solid var(--white); 
+  margin: 5px 8px 5px 8px;
+  background-color: rgba(255, 255, 255, 0);
+   opacity: 1;
+}
+#section-12 .swiper-pagination-bullet-active{
+  background-color:#fff;
+   
+}
+/*
 ##########################
 ### Section 12 - End
 ##########################
@@ -671,120 +684,120 @@
 
 
 
-  /************ Responsive Media Query ***************/
-  @media(max-width:1400px) {
-    #section-2 .number-container {
-      column-gap: 2em;
-      row-gap: 3em;
-    }
-
-    #section-2 .num-box {
-      max-width: 164px;
-    }
+/************ Responsive Media Query ***************/
+@media(max-width:1400px) {
+  #section-2 .number-container {
+    column-gap: 2em;
+    row-gap: 3em;
   }
 
-  @media(max-width:1280px) {
-    body {
-      font-size: 70%;
-    }
+  #section-2 .num-box {
+    max-width: 164px;
+  }
+}
 
-    #section-1 .banner-flex {
-      flex-wrap: wrap;
-    }
-
-    #section-1 .banner-text {
-      width: 100%;
-      max-width: 530px;
-    }
-
-    #section-1 .banner-slider {
-      width: 100%;
-      max-width: 350px;
-    }
+@media(max-width:1280px) {
+  body {
+    font-size: 70%;
   }
 
-  @media(max-width:992px) {
-    #section-1 .banner-flex {
-      justify-content: center;
-    }
-
-    #section-1 .banner-text .banner-hero_trigger {
-      text-align: center;
-    }
+  #section-1 .banner-flex {
+    flex-wrap: wrap;
   }
 
-  @media(max-width:768px) {
-    #section-9 .testimonial-record .testi-picture:after {
-      display: none;
-    }
-
-    br {
-      display: none;
-    }
-
-    #section-1 .banner-slider .btn_box span {
-      font-size: 15px;
-    }
-
-    #section-1 .banner-slider-pagination {
-      bottom: -2em;
-    }
-
-    #section-3 .scroll-container {
-      height: auto;
-      overflow-x: initial;
-    }
-
-    #section-10 .rating-container {
-      flex-wrap: wrap;
-    }
+  #section-1 .banner-text {
+    width: 100%;
+    max-width: 530px;
   }
 
-  @media(max-width:632px) {
+  #section-1 .banner-slider {
+    width: 100%;
+    max-width: 350px;
+  }
+}
 
-    body {
-      font-size: 65%;
-    }
-
-    #section-1 .banner-slider-pagination {
-      bottom: 0em;
-    }
-
-    #section-1 .banner-text .banner-hero_trigger {
-      text-align: center;
-    }
-
-    #section-7 .pagination-top .swiper-pagination-bullet {
-      font-size: 20px;
-    }
+@media(max-width:992px) {
+  #section-1 .banner-flex {
+    justify-content: center;
   }
 
-  @media(max-width:500px) {
-    body {
-      font-size: 60%;
-    }
+  #section-1 .banner-text .banner-hero_trigger {
+    text-align: center;
+  }
+}
 
-    #section-6 .tabs-details img {
-      max-width: 300px;
-    }
-
-    #section-6 .nav-link {
-      padding: 0.1em 1em;
-    }
-
-    #section-3 .icons-container .icons-box {
-      max-width: 80px;
-    }
+@media(max-width:768px) {
+  #section-9 .testimonial-record .testi-picture:after {
+    display: none;
   }
 
-  @media(max-width:417px) {
-    #section-7 .pagination-top .swiper-pagination-bullet {
-      width: 50px;
-      border-radius: 40px;
-      height: 48px;
-      line-height: 17px;
-    }
-
+  br {
+    display: none;
   }
 
-  /********** Banner Area ********/
+  #section-1 .banner-slider .btn_box span {
+    font-size: 15px;
+  }
+
+  #section-1 .banner-slider-pagination {
+    bottom: -2em;
+  }
+
+  #section-3 .scroll-container {
+    height: auto;
+    overflow-x: initial;
+  }
+
+  #section-10 .rating-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width:632px) {
+
+  body {
+    font-size: 65%;
+  }
+
+  #section-1 .banner-slider-pagination {
+    bottom: 0em;
+  }
+
+  #section-1 .banner-text .banner-hero_trigger {
+    text-align: center;
+  }
+
+  #section-7 .pagination-top .swiper-pagination-bullet {
+    font-size: 20px;
+  }
+}
+
+@media(max-width:500px) {
+  body {
+    font-size: 60%;
+  }
+
+  #section-6 .tabs-details img {
+    max-width: 300px;
+  }
+
+  #section-6 .nav-link {
+    padding: 0.1em 1em;
+  }
+
+  #section-3 .icons-container .icons-box {
+    max-width: 80px;
+  }
+}
+
+@media(max-width:417px) {
+  #section-7 .pagination-top .swiper-pagination-bullet {
+    width: 50px;
+    border-radius: 40px;
+    height: 48px;
+    line-height: 17px;
+  }
+
+}
+
+/********** Banner Area ********/
