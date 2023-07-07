@@ -63,6 +63,9 @@ body{
   [data-bgcolor="primary2"] {
     background-color:#d4af37;
   }
+  [data-bgcolor="gray"] {
+    background-color:#f0f0f0;
+  }
   [data-bgcolor="dark"] {
     background-color:#2b2a2b;
   }

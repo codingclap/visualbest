@@ -700,7 +700,7 @@
   flex-direction: column;
   position: absolute;
   width: 236px;
-  top: -20px;
+  top: -15px;
   left: -26px;
   text-align: center;
   z-index: +99999;
@@ -742,6 +742,50 @@
 ##########################
 */
 
+
+/*
+##########################
+### Section 14 - STart
+##########################
+*/
+
+#section-14 .card{
+  border:0px;
+  border-radius:23px;
+  max-width: 400px;
+  row-gap:1em;
+  margin:0 auto;
+}
+#section-14 .card-body{
+  min-height: 231px;
+  padding: 1rem 1.8rem;
+}
+#section-14 .card-body .card-date{
+  font-size:15px;
+}
+#section-14 .button{
+ font-size: 17px;
+}
+#section-14 .cta-pair__button, .cta-pair__link { 
+  position: absolute;
+  bottom: 30px;
+  padding: 0px 1.8rem;
+  left: 0;
+  text-align: left!important;
+  width: 100%;
+}
+#section-14 .button__inner {
+  min-height: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+/*
+##########################
+### Section 14 - End
+##########################
+*/
 
 
 
