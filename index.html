@@ -1336,6 +1336,19 @@
       </div>
     </div>
   </section>
+
+  <script>
+    function icon_popup(id) {
+      if (id) {
+        document.getElementById(id).style = 'display:flex';
+      } else if (id == ' ') {
+        document.getElementsByClassName('icon-txt')[0].style = "display:none";
+      }
+    }
+    function icon_close(id) {
+      document.getElementById(id).style = 'display:none';
+    }
+  </script>
   <!------------- Section 13 Closed ------------>
 
   <!---------------------- Section 14 ---------------------->
@@ -1352,9 +1365,11 @@
             <img src="./images/lates-blog.svg" class="card-img-top w-100" alt="...">
             <div class="card-body">
               <span class="card-date" data-font-style="popping-semibold">April 28, 2023</span>
-              <h5 class="card-title pt-3" data-font-style="popping-bold">Website vs App: Guide to Choosing the Right Platform for Your Business</h5> 
+              <h5 class="card-title pt-3" data-font-style="popping-bold">Website vs App: Guide to Choosing the Right
+                Platform for Your Business</h5>
               <div class="cta-pair__button text-center w-100 pt-5 ">
-                <a data-category-search-cta="" class="button button--jumbo button--primary button--responsive" href="/categories" data-font-style="popping-semibold">
+                <a data-category-search-cta="" class="button button--jumbo button--primary button--responsive"
+                  href="/categories" data-font-style="popping-semibold">
                   <span class="button__inner">
                     <span class="button__label">
                       Read Blog</span>
@@ -1370,9 +1385,10 @@
             <img src="./images/latest-report.svg" class="card-img-top w-100" alt="...">
             <div class="card-body">
               <span class="card-date" data-font-style="popping-semibold">April 28, 2023</span>
-              <h5 class="card-title pt-3" data-font-style="popping-bold">2023 Guide to the State<br> of Design</h5> 
+              <h5 class="card-title pt-3" data-font-style="popping-bold">2023 Guide to the State<br> of Design</h5>
               <div class="cta-pair__button text-center w-100 pt-5 ">
-                <a data-category-search-cta="" class="button button--jumbo button--primary button--responsive" href="/categories" data-font-style="popping-semibold">
+                <a data-category-search-cta="" class="button button--jumbo button--primary button--responsive"
+                  href="/categories" data-font-style="popping-semibold">
                   <span class="button__inner">
                     <span class="button__label">
                       Get the Copy</span>
@@ -1388,9 +1404,11 @@
             <img src="./images/latest-event.svg" class="card-img-top w-100" alt="...">
             <div class="card-body">
               <span class="card-date" data-font-style="popping-semibold">January 16, 2023</span>
-              <h5 class="card-title pt-3" data-font-style="popping-bold">Celebrating 7 Years of Creativity, Quality, and Customer Service</h5> 
+              <h5 class="card-title pt-3" data-font-style="popping-bold">Celebrating 7 Years of Creativity, Quality, and
+                Customer Service</h5>
               <div class="cta-pair__button text-center w-100 pt-5 ">
-                <a data-category-search-cta="" class="button button--jumbo button--primary button--responsive" href="/categories" data-font-style="popping-semibold">
+                <a data-category-search-cta="" class="button button--jumbo button--primary button--responsive"
+                  href="/categories" data-font-style="popping-semibold">
                   <span class="button__inner">
                     <span class="button__label">
                       See the updates</span>
@@ -1400,29 +1418,114 @@
               </div>
             </div>
           </div>
-        </div> 
+        </div>
       </div>
     </div>
   </section>
 
+  <!---------------------- Section 14 closed ---------------------->
 
 
+  <!---------------------- Section 15 ---------------------->
+  <section id="section-15" data-bgcolor="blue">
+    <div class="container pt-4 pt-md-5 pb-4 pb-md-4">
+      <div class="row text-center pt-4 pb-3 pb-md-5 gap-5 justify-content-center">
+        <div class="col-12 col-md-4 col-lg-4">
+          <h5 class="text-center text-lg-end" data-font-style="popping-bold" data-heading="3em" data-color="white">
+            Contact Us</h5>
+          <p class="text-center text-lg-end" data-font-style="popping-regular" data-heading="20px" data-color="white">
+            We are very quick to respond.<br> Why don’t you give us a try?</p>
 
-  <script>
-    function icon_popup(id) {
-      if (id) {
-        document.getElementById(id).style = 'display:flex';
-      } else if (id == ' ') {
-        document.getElementsByClassName('icon-txt')[0].style = "display:none";
-      }
-    }
-    function icon_close(id) {
-      document.getElementById(id).style = 'display:none';
-    }
-  </script>
-  <!---------------------- Section 13 ---------------------->
+          <div class="text-center text-lg-end mt-4 mb-2"><img src="./images/mail.png" alt="" width="45px"></div>
+          <p class="text-center text-lg-end mb-0" data-font-style="popping-bold" data-heading="20px" data-color="white">
+            <strong>Mail Us at </strong>
+          </p>
+          <p class="text-center text-lg-end"><a href="mailto:info@visualbest.co" style="text-decoration:none;"
+              data-font-style="popping-regular" data-para="18px" data-color="white">info@visualbest.co</a></p>
 
 
+          <div class="text-center text-lg-end mt-4 mb-2"><img src="./images/phone.png" alt="" width="45px"></div>
+          <p class="text-center text-lg-end mb-1" data-font-style="popping-bold" data-heading="20px" data-color="white">
+            <strong>Call Us at </strong>
+          </p>
+          <p class="text-center text-lg-end mb-0" data-font-style="popping-regular" data-para="18px"
+            data-color="white">+91 85956 73328</p>
+          <p class="text-center text-lg-end" data-font-style="popping-regular" data-para="18px" data-color="white">
+            +91 85956 73328</p>
+        </div>
+        <style>
+          input[type="text"] {
+            width: 100%;
+            height: 55px;
+            padding: 5px 25px;
+            color: #fff;
+            background: #fff0;
+            border: 2px solid#fff;
+            font-family: popping-semibold;
+            font-size: 18px;
+          }
+
+          textarea:focus,
+          input:focus {
+            outline: none;
+          }
+
+          input[type="email"] {
+            width: 100%;
+            height: 55px;
+            padding: 5px 25px;
+            background: #fff0;
+            color: #fff;
+            border: 2px solid#fff;
+            font-family: popping-semibold;
+            font-size: 18px;
+          }
+
+          input[type="button"] {
+            width: 100%;
+            background: #fff;
+            border: 0px;
+            padding: 10px 10px;
+            border-radius: 30px;
+            font-family: popping-semibold;
+            font-size: 22px;
+          }
+
+          textarea {
+            width: 100%;
+            color: #fff;
+            padding: 12px 25px 5px 25px;
+            background: #fff0;
+            border: 2px solid#fff;
+            font-family: popping-semibold;
+            font-size: 18px;
+          }
+
+          ::placeholder {
+            color: #fff;
+          }
+        </style>
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="row justify-content-center">
+            <div class="col-md-8 py-3">
+              <input type="text" name="name" placeholder="Full Name">
+            </div>
+            <div class="col-md-8 py-3">
+              <input type="email" name="email" placeholder="Email*">
+            </div>
+            <div class="col-md-8 py-3">
+              <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
+            </div>
+
+            <div class="col-md-8 pt-3">
+              <input type="button" value="Get quotation">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---------------------- Section 15 Closed ---------------------->
 
 
 
