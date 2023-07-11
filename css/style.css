@@ -809,12 +809,46 @@
   background-repeat: no-repeat;
   z-index: -1;
  }
- 
+
 /*
 ##########################
 ### Section 15 - End
 ##########################
 */
+
+/*
+##########################
+### Section 16
+##########################
+*/
+#section-16 .accordion-button { 
+  padding: 1.25rem 1.25rem; 
+  color: var(--bs-accordion-btn-color);
+  text-align: left;
+  background-color: #f0f0f0;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: var(--bs-accordion-transition);
+}
+
+#section-16 .accordion-button:focus{
+  box-shadow:none;
+}
+#section-16 .accordion-button:not(.collapsed){
+  box-shadow:none;
+  background: #fff;
+}
+
+#section-16 .accordion-body{
+  padding: 0rem 1.25rem 1rem 1.25rem;
+}
+/*
+##########################
+### Section 16 - End
+##########################
+*/
+
 
 
 /************ Responsive Media Query ***************/

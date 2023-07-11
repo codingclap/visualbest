@@ -150,6 +150,10 @@ body{
   [data-heading="20px"] {
     font-size: 20px;
   }
+
+  [data-heading="18px"] {
+    font-size: 18px;
+  }
    
   /********** Default Heading *********/
   
