@@ -799,7 +799,7 @@
 #section-15 .container:before{
   content: '';
   position: absolute;
-  top: 0px;
+  bottom: 0px;
   left: 0;
   width: 100%;
   max-width: 528px;
@@ -818,6 +818,13 @@
 
 
 /************ Responsive Media Query ***************/
+@media(max-width:1550px) {
+  #section-15 .container:before { 
+    width: 40%;
+    max-width: 400px;
+    height: 80%;
+  }
+}
 @media(max-width:1400px) {
   #section-2 .number-container {
     column-gap: 2em;
@@ -830,6 +837,11 @@
 
   #section-13 .brand-container .icons {
     max-width: 146px;
+  }
+  #section-15 .container:before { 
+    width: 40%;
+    max-width: 400px;
+    height: 80%;
   }
 }
 
@@ -857,7 +869,17 @@
     width: 100%;
     max-width: 350px;
   }
+  #section-15 .container:before { 
+    width: 63%;
+    max-width: 347px;
+    height: 68%;
+  }
+}
 
+@media(max-width:1024px){
+  #section-15 .container:before { 
+    display: none;
+  }
 }
 
 @media(max-width:992px) {
