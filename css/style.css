@@ -837,11 +837,19 @@
 }
 #section-16 .accordion-button:not(.collapsed){
   box-shadow:none;
-  background: #fff;
+  background: #f0f0f0;
 }
 
 #section-16 .accordion-body{
   padding: 0rem 1.25rem 1rem 1.25rem;
+  background: #f0f0f0;
+}
+
+#section-16 .accordion-button::after{
+  background-image:url('../images/plus.png');
+}
+#section-16 .accordion-button:not(.collapsed)::after{
+  background-image:url('../images/minus.png');
 }
 /*
 ##########################
