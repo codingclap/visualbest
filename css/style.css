@@ -829,6 +829,7 @@
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
+  align-items: flex-start;
   transition: var(--bs-accordion-transition);
 }
 
