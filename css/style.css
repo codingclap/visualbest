@@ -890,16 +890,16 @@
 }
 
 #footer ul.footer-menu-2{
-  width:250px;
+  width:280px;
   color:var(--white);
   text-align:left;
   margin:0 auto;
   list-style: none;
 }
 #footer .footer-menu-2 li{
-  padding: 5px 0px;
-  font-family:'popping-regular'; 
-  font-size: 20px;
+  padding: 8px 0px;
+  font-family:'popping-semibold'; 
+  font-size: 22px;
 }
 /*
 ##########################
