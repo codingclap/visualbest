@@ -858,7 +858,54 @@
 ##########################
 */
 
+/*
+##########################
+### Footer Section
+##########################
+*/
+#footer{
 
+}
+
+#footer ul.footer-menu{
+  width:200px;
+  color:var(--white);
+  text-align:left;
+  margin:0 auto;
+  list-style: none;
+}
+
+#footer .footer-menu li{
+   padding: 8px 0px;
+   font-family:'popping-regular';
+   font-size: 17px;
+}
+#footer .footer-img1{
+  width:100%;
+  max-width: 220px;
+}
+#footer .footer-img2{
+  width:100%;
+  max-width: 160px;
+}
+
+#footer ul.footer-menu-2{
+  width:250px;
+  color:var(--white);
+  text-align:left;
+  margin:0 auto;
+  list-style: none;
+}
+#footer .footer-menu-2 li{
+  padding: 5px 0px;
+  font-family:'popping-regular'; 
+  font-size: 20px;
+}
+/*
+##########################
+### Footer Section End
+##########################
+*/
 
 /************ Responsive Media Query ***************/
 @media(max-width:1550px) {
