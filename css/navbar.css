@@ -1,0 +1,196 @@
+ .page-header #headertopbar {
+     font-family: 'Inter', sans-serif;
+     padding: 16px 0 0;
+     position: fixed;
+     top:0;
+     left:0;
+     z-index: +99999;
+     width: 100%;
+     background-color:#fff;
+ }
+
+ .container,
+ .container-fluid {
+     margin-right: auto;
+     margin-left: auto;
+     padding-left: 24px;
+     padding-right: 24px;
+ }
+
+ .container-fluid {
+     max-width: 1920px;
+ }
+
+ .page-header #headertopbar .headertopbar-inner {
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-align: center;
+     align-items: center;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+ }
+
+ .page-header .headertopbar-revenue {
+     display: inline-block;
+     text-decoration: none;
+ }
+
+ .page-header .headertopbar-revenue .title {
+     font-family: inherit;
+     margin: 0 0 2px;
+     font-weight: 700;
+     font-size: 12px;
+     line-height: 1.2;
+     letter-spacing: .05em;
+     text-transform: uppercase;
+     color: #374046;
+ }
+
+
+ .page-header .headertopbar-revenue .value {
+     position: relative;
+     margin: 0;
+     padding-right: 22px;
+     font-family: inherit;
+     font-weight: 800;
+     font-size: 18px;
+     line-height: 120%;
+     letter-spacing: -.0045em;
+     color: #00448F;
+     display: inline-block;
+ }
+
+
+ .page-header .headertopbar-revenue .value i {
+     font-size: 15px;
+     margin-right: 8px;
+ }
+
+
+ .page-header #headertopbar .headertopbar-right {
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-align: center;
+     align-items: center;
+
+ }
+
+ .page-header .headertopbar-menu {
+     font-family: inherit;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-align: center;
+     align-items: center;
+ }
+
+ .page-header .headertopbar-menu li:first-child {
+     margin-left: 0;
+ }
+
+ .page-header .headertopbar-menu li {
+     display: inline-block;
+     margin-left: 16px;
+     padding: 0;
+ }
+
+ .page-header ul li,
+ .page-header ol li {
+     padding: 0;
+ }
+
+ .page-header .headertopbar-menu li a {
+     text-align: center;
+     padding: 8px;
+     position: relative;
+     font-family: inherit;
+     display: block;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 1;
+     letter-spacing: -.0045em;
+     color: #222;
+     text-decoration: none;
+ }
+
+ .page-header .headertopbar-menu li a i {
+     display: inline-block;
+     font-size: 16px;
+     vertical-align: baseline;
+     margin-right: 9px;
+ }
+
+ .page-header #headertopbar .get_proposal_btn {
+     display: none;
+     margin-left: 16px;
+ }
+
+ .page-header .get_proposal_btn {
+     padding: 12px 24px;
+     font-weight: 600;
+     font-family: inherit;
+     font-size: 18px;
+     line-height: 28px;
+     text-align: center;
+     letter-spacing: -.0045em;
+     color: #fff;
+     background: #207DE9;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+     border-radius: 4px;
+     text-decoration: none;
+     white-space: nowrap;
+ }
+
+
+ @media (max-width: 1550px) {
+     .page-header .get_proposal_btn {
+         font-size: 16px;
+     }
+
+     .page-header .headertopbar-menu li {
+         margin-left: 8px;
+     }
+ }
+
+ @media (max-width: 1199px) {
+     .page-header #headertopbar .get_proposal_btn {
+         padding: 12px 16px;
+         font-size: 14px;
+         line-height: 17px;
+     }
+
+     .page-header #headertopbar .headertopbar-right {
+         width: 100%;
+         -ms-flex-pack: justify;
+         justify-content: space-between;
+     }
+
+     .page-header .headertopbar-menu li,
+     .page-header .headertopbar-revenue,
+     .page-header #headertopbar .get_proposal_btn {
+         display: none;
+     }
+ }
+
+ @media (max-width: 1199px) {
+
+     .page-header .headertopbar-menu li.phone,
+     .page-header #headertopbar .get_proposal_btn {
+         display: block;
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
