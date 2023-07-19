@@ -1,20 +1,15 @@
  .page-header #headertopbar {
-     font-family: 'Inter', sans-serif;
+     font-family: popping-semibold;
      padding: 16px 0 0;
-     position: fixed;
-     top:0;
-     left:0;
-     z-index: +99999;
-     width: 100%;
-     background-color:#fff;
+     background-color: #fff;
  }
 
  .container,
  .container-fluid {
      margin-right: auto;
      margin-left: auto;
-     padding-left: 24px;
-     padding-right: 24px;
+     padding-left: 50px;
+     padding-right: 50px;
  }
 
  .container-fluid {
@@ -36,14 +31,14 @@
  }
 
  .page-header .headertopbar-revenue .title {
-     font-family: inherit;
+     font-family: popping-semibold;
      margin: 0 0 2px;
      font-weight: 700;
      font-size: 12px;
      line-height: 1.2;
      letter-spacing: .05em;
      text-transform: uppercase;
-     color: #374046;
+     
  }
 
 
@@ -51,12 +46,11 @@
      position: relative;
      margin: 0;
      padding-right: 22px;
-     font-family: inherit;
+     font-family: popping-semibold;
      font-weight: 800;
      font-size: 18px;
      line-height: 120%;
-     letter-spacing: -.0045em;
-     color: #00448F;
+     letter-spacing: -.0045em; 
      display: inline-block;
  }
 
@@ -187,10 +181,78 @@
 
 
 
+ /*#####################
+ ####    Menu Area   ###
+ #######################*/
 
+ #headermenu {
+     font-family: popping-semibold;
+     background-color: #fff; 
+     width: 100%; 
+     z-index: +9999;
+     transition: 0.3s ease-in-out;
+     box-shadow: rgba(3,27,78,.1) 0 2px 4px;
+ }
 
+ #headermenu .headermenu-inner {
+     display: flex;
+     justify-content: space-between;
+     align-items: center; 
+ }
+ #headermenu .headermenu-inner .headermenu-logo img{
+    width: 100%;
+    max-width: 221px;
+}
+ 
+ .headermenu-main ul.headermenu-firstmenu {
+     display: flex;
+     justify-content: center;
+     margin: 0px;
+     padding: 0px;
+ }
 
+ .headermenu-main ul.headermenu-firstmenu li {
+     list-style: none;
+ }
+ .headermenu-main ul.headermenu-firstmenu li:hover {
+   background:#fffce5;
+   border-radius: 5px 5px 0px 0;
+}
+.headermenu-main ul.headermenu-firstmenu li:hover a{
+    color:#ff6200;
+ }
 
+ .headermenu-main ul.headermenu-firstmenu li>a {
+     border-radius: 8px 8px 0 0;
+     text-align: left;
+     position: relative;
+     display: block;
+     padding: 35px 24px;
+     font-family: inherit;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 100%;
+     letter-spacing: -.0045em;
+     color: #222;
+     text-decoration: none;
+     word-break: initial;
+     cursor: pointer !important;
+ }
 
+ #menu-item-111:hover > .submenu-container{
+    display: block;
+ }
 
+ .headermenu-main .submenu-container {
+     width: 100%;
+     background-color: #345;
+     position: absolute;
+     left: 0px;
+     padding: 20px 20px;
+     display: none;
+     z-index: +999;
+ }
 
+ .headermenu-main .submenu-container.active {
+     display: block;
+ }

@@ -80,6 +80,9 @@ body{
   [data-color="primary"] {
     color:#ffc514;
   }
+  [data-color="red"] {
+    color:#ff6200;
+  }
   [data-color="primary2"] {
     color:#d4af37;
   }
