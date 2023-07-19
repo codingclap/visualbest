@@ -868,7 +868,8 @@
 }
 
 #footer ul.footer-menu{
-  width:200px;
+  width:100%;
+  max-width:280px;
   color:var(--white);
   text-align:left;
   margin:0 auto;
@@ -890,7 +891,8 @@
 }
 
 #footer ul.footer-menu-2{
-  width:280px;
+  width:100%;
+  max-width:280px;
   color:var(--white);
   text-align:left;
   margin:0 auto;
@@ -1011,6 +1013,16 @@
   #section-13 .brand-container {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  #footer ul.footer-menu{
+    max-width:350px; 
+  }
+  #footer .footer-img1{ 
+    max-width: 350px;
+  }
+  
+  #footer ul.footer-menu-2{
+    max-width:350px;
   }
 }
 
