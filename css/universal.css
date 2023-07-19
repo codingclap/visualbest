@@ -1,6 +1,7 @@
 body{
     font-size: 100%;
     color:#000000;
+    box-sizing: border-box;
   }
   
   :root{
