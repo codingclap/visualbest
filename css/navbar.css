@@ -23,6 +23,7 @@
      align-items: center;
      -ms-flex-pack: justify;
      justify-content: space-between;
+     flex-wrap: wrap;
  }
 
  .page-header .headertopbar-revenue {
@@ -191,13 +192,14 @@
      width: 100%; 
      z-index: +9999;
      transition: 0.3s ease-in-out;
-     box-shadow: rgba(3,27,78,.1) 0 2px 4px;
+     box-shadow: rgba(3,27,78,.1) 0 3px 4px;
  }
 
  #headermenu .headermenu-inner {
      display: flex;
      justify-content: space-between;
      align-items: center; 
+     flex-wrap: wrap;
  }
  #headermenu .headermenu-inner .headermenu-logo img{
     width: 100%;
@@ -209,6 +211,7 @@
      justify-content: center;
      margin: 0px;
      padding: 0px;
+     flex-wrap: wrap;
  }
 
  .headermenu-main ul.headermenu-firstmenu li {
@@ -245,7 +248,7 @@
 
  .headermenu-main .submenu-container {
      width: 100%;
-     background-color: #345;
+     background-color: #fffce5;
      position: absolute;
      left: 0px;
      padding: 20px 20px;
