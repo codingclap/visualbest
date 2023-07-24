@@ -391,6 +391,7 @@
     }
     .page-header .headermenu-inner .menu-toggle{
         display: block;
+        padding-right: 40px;
     }
 }
 
@@ -399,6 +400,12 @@
     .page-header .headertopbar-menu li.phone,
     .page-header #headertopbar .get_proposal_btn {
         display: block;
+    }
+
+    #page-header .container,
+    .container-fluid { 
+        padding-left: 15px;
+        padding-right: 15px;
     }
     
 }
