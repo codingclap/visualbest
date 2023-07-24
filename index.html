@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,13 +47,18 @@
           <div class="headermenu-logo">
             <img src="images/visualbest-logo.png" alt="">
           </div>
+          <a href="#" class="menu-toggle">
+            <span class="burger">
+              <span></span><span></span><span></span>
+            </span>
+          </a>
 
           <div class="headermenu-main">
             <ul class="headermenu-firstmenu">
-              <li id="menu-item-111">
-                <a href="javascript:void(0)">Design</a>
-                <div class="submenu-container">
-                  <ul class="submenu-row"> 
+              <li id="menu-item-111" data-dropdown="dropdown1" data-menu="menu1" class="primary-menu">
+                <a href="javascript:void(0)" id="menu1">Design</a>
+                <div class="submenu-container" id="dropdown1">
+                  <ul class="submenu-row">
                     <li class="submenu-items">12121</li>
                     <li class="submenu-items">1212</li>
                     <li class="submenu-items">1212</li>
@@ -61,19 +67,30 @@
                   </ul>
                 </div>
               </li>
-              <li id="menu-item-112"><a href="">Illustration</a></li>
-              <li id="menu-item-113"><a href="">Web</a></li>
-              <li id="menu-item-114"><a href="">Video</a></li>
-              <li id="menu-item-115"><a href="">Content</a></li>
-              <li id="menu-item-116"><a href="">Marketing</a></li>
-              <li id="menu-item-117"><a href="">Resources</a></li>
-              <li id="menu-item-118"><a href="">About Us</a></li>
+              <li id="menu-item-112" data-dropdown="dropdown2" data-menu="menu2" class="primary-menu"><a
+                  href="javascript:void(0)" id="menu2">Illustration</a>
+                <div class="submenu-container" id="dropdown2">
+                  <ul class="submenu-row">
+                    <li class="submenu-items">555555</li>
+                    <li class="submenu-items">55t333</li>
+                    <li class="submenu-items">123434312</li>
+                    <li class="submenu-items">34312431</li>
+                    <li class="submenu-items">3432121</li>
+                  </ul>
+                </div>
+              </li>
+              <li id="menu-item-113" class="primary-menu"><a href="javascript:void(0)">Web</a></li>
+              <li id="menu-item-114" class="primary-menu"><a href="">Video</a></li>
+              <li id="menu-item-115" class="primary-menu"><a href="">Content</a></li>
+              <li id="menu-item-116" class="primary-menu"><a href="">Marketing</a></li>
+              <li id="menu-item-117" class="primary-menu"><a href="">Resources</a></li>
+              <li id="menu-item-118" class="primary-menu"><a href="">About Us</a></li>
             </ul>
 
           </div>
 
           <div class="headermenubar-button">
-            <button>Hello</button>
+            <a href="https://www.webfx.com/free-quote/" class="get_proposal_btn">Book a Call</a> 
           </div>
         </div>
       </div>
@@ -82,6 +99,38 @@
 
   </header>
   <!---------------------- Navbar ---------------------->
+
+  <script>
+    // let primary_menu = document.querySelectorAll('.primary-menu a');
+    // let submenu = document.querySelectorAll('.submenu-container');
+
+    // primary_menu.forEach(function (toggle, index) {
+    //   toggle.addEventListener('click', (e) => {
+
+    //     if (e.currentTarget.classList.contains('highlight-list')) {
+    //       e.currentTarget.classList.remove('highlight-list');
+    //     } else {
+    //       e.currentTarget.classList.add('highlight-list');
+    //     }
+
+    //     const menuName = e.currentTarget.dataset.menu;
+    //     menunameElement = document.getElementById(menuName);
+    //     menunameElement.classList.toggle('highlight-anchor');
+
+
+
+    //     const dropdownIndex = e.currentTarget.dataset.dropdown;
+    //     console.log(dropdownIndex);
+    //     dropdownElement = document.getElementById(dropdownIndex);
+    //     dropdownElement.classList.toggle('dropdownshow');
+
+
+
+    //   });
+    // });
+
+  </script>
+
 
   <!---------------------- Section 1 ---------------------->
   <link rel="stylesheet" media="screen" href="css/searchbar.css" />
@@ -1891,14 +1940,14 @@
 
 
   <script>
-    window.onscroll = function(e) {
-    // log the length scrolled vertically
-    if(window.pageYOffset >= 50){
-      document.getElementById('headermenu').style="position: fixed;left: 0px;top:0px; transition: 0.3s ease-in-out;box-shadow: rgba(3,27,78,.1) 0 2px 4px;";
-    }else{
-      document.getElementById('headermenu').style="position: sticky;left: 0px;top:0px; transition: 0.3s ease-in-out;";
+    window.onscroll = function (e) {
+      // log the length scrolled vertically
+      if (window.pageYOffset >= 50) {
+        document.getElementById('headermenu').style = "position: fixed;left: 0px;top:0px; transition: 0.3s ease-in-out;box-shadow: rgba(3,27,78,.1) 0 2px 4px;";
+      } else {
+        document.getElementById('headermenu').style = "position: sticky;left: 0px;top:0px; transition: 0.3s ease-in-out;";
+      }
     }
-}
   </script>
 </body>
 
