@@ -282,7 +282,7 @@
      text-align: left;
      position: relative;
      display: block;
-     padding: 35px 24px;
+     padding: 32px 25px;
      font-family: inherit;
      font-weight: 400;
      font-size: 16px;
@@ -293,19 +293,19 @@
      word-break: initial;
      cursor: pointer !important;
      position: relative;
-     padding-right:44px;
+     padding-right:25px;
  }
 
  .headermenu-main ul.headermenu-firstmenu li>a:after{
     position: absolute;
     content: " ";
-    width: 13px;
+    width: 12px;
     height: 10px;
     background-image: url(../images/arrow-down.png);
     background-size: contain;
     background-repeat: no-repeat;
     top: 45%;
-    right: 24px;
+    right: 9px;
     transition: all 0.3s;
  }
  .headermenu-main ul.headermenu-firstmenu li:hover a:after{ 
@@ -352,6 +352,6 @@
     .headermenu-main ul.headermenu-firstmenu li>a:after { 
         width: 12px; 
         top: 45%;
-        right: 13px; 
+        right: 12px; 
     }
  }
