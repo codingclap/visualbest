@@ -60,12 +60,88 @@
               <li id="menu-item-111" data-dropdown="dropdown1" data-menu="menu1" class="primary-menu">
                 <a href="javascript:void(0)" id="menu1">Design</a>
                 <div class="submenu-container" id="dropdown1">
-                  <ul class="submenu-row">
-                    <li class="submenu-items">12121</li>
-                    <li class="submenu-items">1212</li>
-                    <li class="submenu-items">1212</li>
-                    <li class="submenu-items">121</li>
-                    <li class="submenu-items">2121</li>
+                  <ul class="submenu-items">
+
+                    <li class="submenu-item">
+                      <ul class="nested-submenu-container">
+                        <li>
+                          <span>Graphic Design</span>
+                          <ul class="nested-submenu">
+                            <li><a href="">Report Design</span></a></li>
+                            <li><a href="">Presentation Design</span></a> </li>
+                            <li><a href="">Book and Magazine Layout</span></a></li>
+                            <li><a href="">Cover Design</span></a></li>
+                            <li><a href="">Mascot Design</span></a></li>
+                            <li><a href="">Screen Saver design</span></a></li>
+                            <li><a href="">Brand Style Guides</span></a></li>
+                            <li><a href="">GIFs Design</span></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="submenu-items">
+                      <ul class="nested-submenu-container">
+                        <li>
+                          <span>Graphic Design</span>
+                          <ul class="nested-submenu">
+                            <li><a href="">Report Design</span></a></li>
+                            <li><a href="">Presentation Design</span></a> </li>
+                            <li><a href="">Book and Magazine Layout</span></a></li>
+                            <li><a href="">Cover Design</span></a></li>
+                            <li><a href="">Mascot Design</span></a></li>
+                            <li><a href="">Screen Saver design</span></a></li>
+                            <li><a href="">Brand Style Guides</span></a></li>
+                            <li><a href="">GIFs Design</span></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="submenu-items"><ul class="nested-submenu-container">
+                      <li>
+                        <span>Graphic Design</span>
+                        <ul class="nested-submenu">
+                          <li><a href="">Report Design</span></a></li>
+                          <li><a href="">Presentation Design</span></a> </li>
+                          <li><a href="">Book and Magazine Layout</span></a></li>
+                          <li><a href="">Cover Design</span></a></li>
+                          <li><a href="">Mascot Design</span></a></li>
+                          <li><a href="">Screen Saver design</span></a></li>
+                          <li><a href="">Brand Style Guides</span></a></li>
+                          <li><a href="">GIFs Design</span></a></li>
+                        </ul>
+                      </li>
+                    </ul></li>
+                    <li class="submenu-items"><ul class="nested-submenu-container">
+                      <li>
+                        <span>Graphic Design</span>
+                        <ul class="nested-submenu">
+                          <li><a href="">Report Design</span></a></li>
+                          <li><a href="">Presentation Design</span></a> </li>
+                          <li><a href="">Book and Magazine Layout</span></a></li>
+                          <li><a href="">Cover Design</span></a></li>
+                          <li><a href="">Mascot Design</span></a></li>
+                          <li><a href="">Screen Saver design</span></a></li>
+                          <li><a href="">Brand Style Guides</span></a></li>
+                          <li><a href="">GIFs Design</span></a></li>
+                        </ul>
+                      </li>
+                    </ul></li>
+                    <li class="submenu-items"><ul class="nested-submenu-container">
+                      <li>
+                        <span>Graphic Design</span>
+                        <ul class="nested-submenu">
+                          <li><a href="">Report Design</span></a></li>
+                          <li><a href="">Presentation Design</span></a> </li>
+                          <li><a href="">Book and Magazine Layout</span></a></li>
+                          <li><a href="">Cover Design</span></a></li>
+                          <li><a href="">Mascot Design</span></a></li>
+                          <li><a href="">Screen Saver design</span></a></li>
+                          <li><a href="">Brand Style Guides</span></a></li>
+                          <li><a href="">GIFs Design</span></a></li>
+                        </ul>
+                      </li>
+                    </ul></li>
+
                   </ul>
                 </div>
               </li>
@@ -100,53 +176,13 @@
     <!------header navbar ------>
 
   </header>
-
   <!---------------------- Navbar ---------------------->
 
-  <script>
-
-    /********** Primary Dropdown With Hamberger **********/
-    let toggleMenu = document.querySelector('.menu-toggle');
-    toggleMenu.addEventListener('click', (e) => {
-      if (e.currentTarget.dataset.hamberger === "closed") {
-        e.currentTarget.dataset.hamberger = 'open';
-        document.querySelector('.page-header .burger span:nth-child(1)').style = "top:8px;transform:rotate(135deg);";
-        document.querySelector('.page-header .burger span:nth-child(2)').style = "left:-10px;opacity:0";
-        document.querySelector('.page-header .burger span:nth-child(3)').style = "top:8px;transform:rotate(-135deg);";
-
-        document.querySelector('.headermenu-main').style = "height:100vh";
-      } else {
-        e.currentTarget.dataset.hamberger = 'closed';
-        document.querySelector('.page-header .burger span:nth-child(1)').style = "top:0px;transform:rotate(0deg);";
-        document.querySelector('.page-header .burger span:nth-child(2)').style = "left:0;opacity:1";
-        document.querySelector('.page-header .burger span:nth-child(3)').style = "top:16px;transform:rotate(0deg);";
-
-        document.querySelector('.headermenu-main').style = "height:0vh";
-      }
-      console.log(e.currentTarget.dataset.hamberger === "closed");
-    });
-    /********** Primary Dropdown With Hamberger **********/
 
 
 
 
-
-    /********** Size Observer **********/
-    let dropdownbox = document.querySelector('#headermenu');
-    new ResizeObserver((objects) => {
-
-      for (object of objects) {
-        if (object.contentRect.width > 1199) {
-          console.log(object.contentRect.width);
-          document.querySelector('.headermenu-main').style = "height:auto";
-        }
-      }
-
-    }).observe(dropdownbox)
-
-  </script>
-
-
+ 
   <!---------------------- Section 1 ---------------------->
   <link rel="stylesheet" media="screen" href="css/searchbar.css" />
   <section id="section-1" class="pt-5 pb-5">
@@ -1948,7 +1984,7 @@
 
 
 
-
+  <script src="js/navbar.js"></script>
   <script src="js/data.js"></script>
   <script src="js/jquery-3.6.js"></script>
   <script src="js/search-bar.js"></script>

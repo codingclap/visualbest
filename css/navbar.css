@@ -320,6 +320,22 @@
      display: block;
  }
 
+ .headermenu-main .submenu-container .submenu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+ }
+
+ ul.nested-submenu-container{
+    padding: 10px 24px;
+ }
+ ul.nested-submenu{
+    padding: 0px;
+ }
+ ul.nested-submenu li{
+     
+ }
+
 
 
  @media(max-width:1550px) {
