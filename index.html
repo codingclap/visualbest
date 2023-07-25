@@ -40,7 +40,7 @@
     <!------header top ------>
 
     <!------header navbar ------>
-    <div id="headermenu">
+    <div id="headermenu" style="position:sticky;">
       <div class="container-fluid">
 
         <div class="headermenu-inner">
@@ -1944,6 +1944,7 @@
       // log the length scrolled vertically
       if (window.pageYOffset >= 50) {
         document.getElementById('headermenu').style = "position: fixed;left: 0px;top:0px; transition: 0.3s ease-in-out;box-shadow: rgba(3,27,78,.1) 0 2px 4px;";
+        
       } else {
         document.getElementById('headermenu').style = "position: sticky;left: 0px;top:0px; transition: 0.3s ease-in-out;";
       }

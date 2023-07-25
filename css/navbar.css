@@ -178,20 +178,20 @@
  }
 
  .page-header .get_proposal_btn {
-    padding: 10px 40px;
-    font-weight: 600;
-    font-family: inherit;
-    font-size: 18px;
-    line-height: 28px;
-    text-align: center;
-    letter-spacing: -.0045em;
-    color: #000000;
-    background: #ffc514;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 35px;
-    text-decoration: none;
-    white-space: nowrap;
+     padding: 10px 40px;
+     font-weight: 600;
+     font-family: inherit;
+     font-size: 18px;
+     line-height: 28px;
+     text-align: center;
+     letter-spacing: -.0045em;
+     color: #000000;
+     background: #ffc514;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+     border-radius: 35px;
+     text-decoration: none;
+     white-space: nowrap;
  }
 
 
@@ -337,75 +337,99 @@
  }
 
  @media(max-width:1300px) {
-    .page-header .get_proposal_btn {
-        padding: 8px 25px;
-    }
+     .page-header .get_proposal_btn {
+         padding: 8px 25px;
+     }
+
      #page-header .container,
-     .container-fluid { 
+     .container-fluid {
          padding-left: 20px;
          padding-right: 20px;
      }
 
-     #headermenu .headermenu-inner .headermenu-logo img { 
-        max-width: 200px;
-        padding: 10px 10px 10px 0px;
-    }
+     #headermenu .headermenu-inner .headermenu-logo img {
+         max-width: 200px;
+         padding: 15px 10px 15px 0px;
+     }
  }
 
- 
+
  @media (max-width: 1550px) {
-    .page-header .get_proposal_btn {
+     .page-header .get_proposal_btn {
+         font-size: 15px;
+     }
+
+     .page-header .headertopbar-menu li {
+         margin-left: 8px;
+     }
+ }
+
+ @media (max-width: 1199px) {
+     .page-header #headertopbar .get_proposal_btn {
+         padding: 12px 16px;
+         font-size: 14px;
+         line-height: 17px;
+     }
+
+     .page-header #headertopbar .headertopbar-right {
+         width: 100%;
+         -ms-flex-pack: justify;
+         justify-content: space-between;
+     }
+
+     .page-header .headertopbar-menu li,
+     .page-header .headertopbar-revenue,
+     .page-header #headertopbar .get_proposal_btn {
+         display: none;
+     }
+
+     #headermenu .headermenubar-button {
+         display: none;
+     }
+     .headermenu-main ul.headermenu-firstmenu li>a {
+        padding: 30px 50px; 
         font-size: 15px;
     }
+     .headermenu-main ul.headermenu-firstmenu li>a:after {
+         width: 12px; 
+         right: 58px;
+     }
 
-    .page-header .headertopbar-menu li {
-        margin-left: 8px;
-    }
-}
+     #headermenu .headermenu-main {
+         display: block;
+         position: absolute;
+         height: 100vh;
+         background: #fff;
+         top: 65px;
+         left: 0;
+         z-index: +9999;
+         width: 100%;
+         overflow: hidden;
+         bottom: 0px;
+     }
+     
 
-@media (max-width: 1199px) {
-    .page-header #headertopbar .get_proposal_btn {
-        padding: 12px 16px;
-        font-size: 14px;
-        line-height: 17px;
-    }
+     .headermenu-main ul.headermenu-firstmenu li {
+         width: 100%;
+     }
 
-    .page-header #headertopbar .headertopbar-right {
-        width: 100%;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-    }
+     .page-header .headermenu-inner .menu-toggle {
+         display: block;
+         padding-right: 40px;
+     }
+ }
 
-    .page-header .headertopbar-menu li,
-    .page-header .headertopbar-revenue,
-    .page-header #headertopbar .get_proposal_btn {
-        display: none;
-    }
+ @media (max-width: 1199px) {
 
-    #headermenu .headermenubar-button{
-        display: none;
-    }
+     .page-header .headertopbar-menu li.phone,
+     .page-header #headertopbar .get_proposal_btn {
+         display: block;
+     }
 
-    #headermenu .headermenu-main{
-        display: none;
-    }
-    .page-header .headermenu-inner .menu-toggle{
-        display: block;
-        padding-right: 40px;
-    }
-}
+     #page-header .container,
+     .container-fluid {
+         padding-left: 15px;
+         padding-right: 15px;
+     }
 
-@media (max-width: 1199px) {
-
-    .page-header .headertopbar-menu li.phone,
-    .page-header #headertopbar .get_proposal_btn {
-        display: block;
-    }
-
-    #page-header .container,
-    .container-fluid { 
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    
-}
+ }
