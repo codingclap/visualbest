@@ -21,8 +21,21 @@ toggleMenu.addEventListener('click', (e) => {
 /********** Primary Dropdown With Hamberger **********/
 
 
+/****************** Mobile Click Dropdown active ************/
+let firstMenu = document.querySelector('#menu-item-111');
+let firstMenuAnchor = document.querySelector('#menu-item-111 .primary-links');
+let firstMenuArrow = document.querySelector('#menu-item-111 .primary-links:after');
+let firstMenuSubdrop = document.querySelector('#menu-item-111 .submenu-container');
 
+firstMenu.addEventListener('click',()=>{
+  firstMenu.classList.toggle("primary-bg-active");
+  firstMenuAnchor.classList.toggle("primary-link-color"); 
+  firstMenuSubdrop.classList.toggle("primary-dropdown-display");
+  firstMenuArrow.style("transform:rotate(0deg);")
+})
 
+ 
+/****************** Mobile Click Dropdown active ************/
 
 /********** Size Observer **********/
 let dropdownbox = document.querySelector('#headermenu');
