@@ -266,7 +266,7 @@
      color: #222;
      text-decoration: none;
      word-break: initial;
-     cursor: pointer !important; 
+     cursor: pointer !important;
      padding-right: 25px;
  }
 
@@ -324,16 +324,19 @@
      display: flex;
      justify-content: center;
      align-items: flex-start;
-     gap:2rem; 
-     padding:0px;
+     padding: 0px;
  }
+
  .headermenu-main .submenu-container .submenu-item {
      background-color: #fff;
-     border-radius:10px;
-     box-shadow: rgba(3, 27, 78, .1) 0 1px 8px;
+     border-radius: 10px;
+     -webkit-box-shadow: 0 2px 6px rgba(110, 123, 129, .1);
+     -moz-box-shadow: 0 2px 6px rgba(110, 123, 129, .1);
+     box-shadow: 0 2px 6px rgba(110, 123, 129, .1);
      max-width: 300px;
-    width: 100%;
-}
+     width: 100%;
+     margin: 0px 12px;
+ }
 
  ul.nested-submenu-container {
      padding: 20px 25px;
@@ -342,17 +345,16 @@
  ul.nested-submenu {
      padding: 0px 0px 0px 0px;
  }
- 
+
  .nested-submenu-container .nested-subhead {
-    padding: 10px 0px;
-    display: block;
+     padding: 10px 0px;
+     display: block;
+     font-size: 20px;
  }
 
- .nested-submenu-container .nested-submenu li.secondary-menu {
+ .nested-submenu-container .nested-submenu li.secondary-menu {}
 
- }
-
- .nested-submenu-container .nested-submenu li.secondary-menu a { 
+ .nested-submenu-container .nested-submenu li.secondary-menu a {
      text-align: left;
      position: relative;
      display: block;
@@ -365,22 +367,26 @@
      color: #000;
      text-decoration: none;
      word-break: initial;
-     cursor: pointer !important; 
+     cursor: pointer !important;
  }
 
- .nested-submenu-container li.dropmenu-cta{
-    margin:15px 0px 15px 0px;
+ .nested-submenu-container li.dropmenu-cta {
+     margin: 15px 0px 15px 0px;
  }
+
  .nested-submenu-container li.dropmenu-cta a {
-    text-align: center;
-    font-family: popping-semibold;
-    background: #fec535;
-    border-radius: 5px;
-    padding: 10px 0px;
-    display: block;
-    text-decoration: none;
-    color: #000;
-}
+     text-align: center;
+     font-family: popping-semibold;
+     background: #fec535;
+     border-radius: 5px;
+     padding: 10px 0px;
+     display: block;
+     text-decoration: none;
+     color: #000;
+     width: 100%;
+    max-width: 270px;
+    margin: 0 auto;
+ }
 
 
 
@@ -430,7 +436,21 @@
  }
 
  @media (max-width: 1199px) {
-   
+    .headermenu-main .submenu-container{
+        padding: 10px 0px;
+    }
+    ul.nested-submenu-container {
+        padding: 0px 50px;
+    }
+    .nested-submenu-container .nested-subhead{
+        font-size: 17px;
+    }
+    ul.nested-submenu {
+        padding: 0px 0px 0px 16px;
+    }
+    .nested-submenu-container .nested-submenu li.secondary-menu a{
+        font-size: 14px;
+    }
      .page-header #headertopbar .get_proposal_btn {
          padding: 12px 16px;
          font-size: 14px;
@@ -453,14 +473,39 @@
          display: none;
      }
 
-     .headermenu-main ul.headermenu-firstmenu li.primary-menu>a {
+     .headermenu-main ul.headermenu-firstmenu li.primary-menu>a.primary-links {
          padding: 30px 50px;
-         font-size: 15px;
+         font-size: 18px;
      }
 
-     .headermenu-main ul.headermenu-firstmenu li.primary-menu>a:after {
+     .headermenu-main ul.headermenu-firstmenu li.primary-menu>a.primary-links:before {
+         opacity: .4;
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 40px;
+         right: 40px;
+         border-bottom: 1px solid #BEC6CD;
+     }
+
+     .headermenu-main ul.headermenu-firstmenu li.primary-menu>a.primary-links:after {
          width: 12px;
          right: 58px;
+     }
+
+     .headermenu-main .submenu-container .submenu-item {
+         background-color: transparent;
+         -webkit-box-shadow: none;
+         -moz-box-shadow: none;
+         box-shadow: none;
+         -webkit-border-radius: 0;
+         -moz-border-radius: 0;
+         border-radius: 0;
+         max-width: 100%;
+         margin: 0px 0px;
+     }
+     .headermenu-main .submenu-container .submenu-items {
+        flex-wrap: wrap;
      }
 
      #headermenu .headermenu-main {
@@ -504,8 +549,8 @@
 
 
 
- @media(max-width:768px){
-    #headermenu .headermenu-inner .headermenu-logo img {
-        max-width: 170px; 
-    }
+ @media(max-width:768px) {
+     #headermenu .headermenu-inner .headermenu-logo img {
+         max-width: 170px;
+     }
  }
