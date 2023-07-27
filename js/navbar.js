@@ -21,23 +21,8 @@ toggleMenu.addEventListener('click', (e) => {
 /********** Primary Dropdown With Hamberger **********/
 
 
-/****************** Mobile Click Dropdown active ************/
-let firstMenu = document.querySelector('#menu-item-111');
-let firstMenuAnchor = document.querySelector('#menu-item-111 .primary-links');
-let firstMenuArrow = document.querySelector('#menu-item-111 .primary-links:after');
-let firstMenuSubdrop = document.querySelector('#menu-item-111 .submenu-container');
 
-firstMenu.addEventListener('click',()=>{
-  firstMenu.classList.toggle("primary-bg-active");
-  firstMenuAnchor.classList.toggle("primary-link-color"); 
-  firstMenuSubdrop.classList.toggle("primary-dropdown-display");
-  firstMenuArrow.style("transform:rotate(0deg);")
-})
 
- 
-/****************** Mobile Click Dropdown active ************/
-
-/********** Size Observer **********/
 let dropdownbox = document.querySelector('#headermenu');
 new ResizeObserver((objects) => {
 
@@ -49,5 +34,32 @@ new ResizeObserver((objects) => {
   }
 
 }).observe(dropdownbox)
+/********** Size Observer **********/
+ 
+
+
+
+/****************** Mobile Click Dropdown active ************/
+let firstMenu = document.querySelector('#menu-item-111');
+let firstMenuAnchor = document.querySelector('#menu-item-111 .primary-links');
+let firstMenuArrow = document.querySelector('#menu-item-111 .primary-links:after');
+let firstMenuSubdrop = document.querySelector('#menu-item-111 .submenu-container');
+
+firstMenu.addEventListener('click',()=>{
+   
+  firstMenu.classList.add("primary-bg-active");
+  firstMenuAnchor.classList.add("primary-link-color"); 
+  firstMenuSubdrop.classList.add("primary-dropdown-display");
+  //firstMenuArrow.style("transform:rotate(0deg);");
+  console.log('primary');
+  
+});
 
  
+
+let nestedMenu = document.querySelector('#nested-111');
+nestedMenu.addEventListener('click',()=>{
+  console.log('nested');
+ 
+});
+/****************** Mobile Click Dropdown active ************/

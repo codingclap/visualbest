@@ -243,54 +243,61 @@
      text-decoration: none;
  }
 
- .headermenu-main ul.headermenu-firstmenu li.primary-menu:hover {
-     background: #fffce5;
-     border-radius: 10px 10px 0px 0;
+ .headermenu-main ul.headermenu-firstmenu li.primary-menu a.primary-links {
+    border-radius: 8px 8px 0 0;
+    text-align: left;
+    position: relative;
+    display: block;
+    padding: 35px 10px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -.0045em;
+    color: #222;
+    text-decoration: none;
+    word-break: initial;
+    cursor: pointer !important;
+    padding-right: 25px;
+}
+
+
+
+
+
+
+ @media(min-width:1199px) {
+     .headermenu-main ul.headermenu-firstmenu li.primary-menu:hover {
+         background: #fffce5;
+         border-radius: 10px 10px 0px 0;
+     }
+
+     .headermenu-main ul.headermenu-firstmenu li.primary-menu:hover a.primary-links {
+         color: #ff6200;
+     }
+ 
+     .headermenu-main ul.headermenu-firstmenu li.primary-menu>a:after {
+         position: absolute;
+         content: " ";
+         width: 11px;
+         height: 10px;
+         background-image: url(../images/arrow-down.png);
+         background-size: contain;
+         background-repeat: no-repeat;
+         top: 45%;
+         right: 9px;
+         transition: all 0.3s;
+     }
+
+     .headermenu-main ul.headermenu-firstmenu li.primary-menu:hover a:after {
+         background-image: url(../images/arrow-up.png);
+         top: 42%;
+         transform: rotate(-180deg);
+     }
  }
 
  .primary-bg-active {
      background: #fffce5 !important;
- }
-
- .headermenu-main ul.headermenu-firstmenu li.primary-menu:hover a.primary-links {
-     color: #ff6200;
- }
-
- .headermenu-main ul.headermenu-firstmenu li.primary-menu a.primary-links {
-     border-radius: 8px 8px 0 0;
-     text-align: left;
-     position: relative;
-     display: block;
-     padding: 35px 10px;
-     font-family: inherit;
-     font-weight: 400;
-     font-size: 16px;
-     line-height: 100%;
-     letter-spacing: -.0045em;
-     color: #222;
-     text-decoration: none;
-     word-break: initial;
-     cursor: pointer !important;
-     padding-right: 25px;
- }
-
- .headermenu-main ul.headermenu-firstmenu li.primary-menu>a:after {
-     position: absolute;
-     content: " ";
-     width: 11px;
-     height: 10px;
-     background-image: url(../images/arrow-down.png);
-     background-size: contain;
-     background-repeat: no-repeat;
-     top: 45%;
-     right: 9px;
-     transition: all 0.3s;
- }
-
- .headermenu-main ul.headermenu-firstmenu li.primary-menu:hover a:after {
-     background-image: url(../images/arrow-up.png);
-     top: 42%;
-     transform: rotate(-180deg);
  }
 
  .highlight-list {
@@ -400,8 +407,8 @@
  }
 
  .primary-link-color:after {
-     transform: rotate(-180deg)!important;
-     background-image: url(../images/arrow-up.png)!important;
+     transform: rotate(-180deg) !important;
+     background-image: url(../images/arrow-up.png) !important;
  }
 
  .primary-dropdown-display {
@@ -454,33 +461,7 @@
  }
 
  @media (max-width: 1199px) {
-    .headermenu-main ul.headermenu-firstmenu li.primary-menu:hover a:after { 
-        transform: rotate(0deg);
-        background-image: url(../images/arrow-down.png);
-    }
-     .headermenu-main ul.headermenu-firstmenu li.primary-menu:hover {
-         background: #fff;
-     }
-
-     .nested-submenu-container .nested-subhead:after {
-         position: absolute;
-         content: " ";
-         width: 11px;
-         height: 10px;
-         background-image: url(../images/arrow-down.png);
-         background-size: contain;
-         background-repeat: no-repeat;
-         top: 45%;
-         right: 9px;
-         transition: all 0.3s;
-     }
-
-     .nested-submenu-container li:hover .nested-subhead:after {
-         background-image: url(../images/arrow-down.png);
-         top: 42%;
-         transform: rotate(-180deg);
-     }
-
+      
      .headermenu-main .submenu-container {
          padding: 10px 0px;
          position: relative;
