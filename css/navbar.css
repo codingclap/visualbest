@@ -276,18 +276,6 @@
     transition: all 0.3s;
 }
 
-.submenu-container .nested-subhead:after{
-    position: absolute;
-    content: " ";
-    width: 11px;
-    height: 10px;
-    background-image: url(../images/arrow-down.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    top: 45%;
-    right: 9px;
-    transition: all 0.3s;
-}
 
 
  @media(min-width:1199px) {
@@ -493,6 +481,19 @@
  }
 
  @media (max-width: 1199px) {
+    .submenu-container .nested-subhead:after{
+        position: absolute;
+        content: " ";
+        width: 11px;
+        height: 10px;
+        background-image: url(../images/arrow-down.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 45%;
+        right: 9px;
+        transition: all 0.3s;
+    }
+    
     .submenu-hide{
         height: 0px;  
          overflow: hidden; 
