@@ -35,31 +35,52 @@ new ResizeObserver((objects) => {
 
 }).observe(dropdownbox)
 /********** Size Observer **********/
- 
+
 
 
 
 /****************** Mobile Click Dropdown active ************/
-let firstMenu = document.querySelector('#menu-item-111');
-let firstMenuAnchor = document.querySelector('#menu-item-111 .primary-links');
-let firstMenuArrow = document.querySelector('#menu-item-111 .primary-links:after');
-let firstMenuSubdrop = document.querySelector('#menu-item-111 .submenu-container');
+// let firstMenu = document.querySelector('#menu-item-111');
+// let firstMenuAnchor = document.querySelector('#menu-item-111 .primary-links');
+// let firstMenuArrow = document.querySelector('#menu-item-111 .primary-links:after');
+// let firstMenuSubdrop = document.querySelector('#menu-item-111 .submenu-container');
 
-firstMenu.addEventListener('click',()=>{
-   
-  firstMenu.classList.add("primary-bg-active");
-  firstMenuAnchor.classList.add("primary-link-color"); 
-  firstMenuSubdrop.classList.add("primary-dropdown-display");
-  //firstMenuArrow.style("transform:rotate(0deg);");
-  console.log('primary');
-  
+// firstMenu.addEventListener('click',()=>{
+
+//   firstMenu.classList.add("primary-bg-active");
+//   firstMenuAnchor.classList.add("primary-link-color"); 
+//   firstMenuSubdrop.classList.add("primary-dropdown-display");
+//   //firstMenuArrow.style("transform:rotate(0deg);");
+//   console.log('primary');
+
+// });
+
+
+
+let primaryMenu = document.querySelectorAll('.primary-menu');
+let primaryTrigger;
+let submenu;
+primaryMenu.forEach((element, index) => {
+
+  primaryTrigger = element.querySelector('.primary-links');
+  submenu = element.querySelector('.submenu-container');
+  primaryTrigger.addEventListener('click', () => {
+    if (element.classList.contains("primary-bg-active")) {
+      element.classList.remove("primary-bg-active");
+      element.querySelector('a.primary-links').classList.remove("primary-link-color");
+      element.querySelector('div.submenu-container').classList.remove("primary-dropdown-display");
+    } else {
+      element.classList.add("primary-bg-active");
+      element.querySelector('a.primary-links').classList.add("primary-link-color");
+      element.querySelector('div.submenu-container').classList.add("primary-dropdown-display");
+    }
+
+
+
+  })
+
 });
 
- 
 
-let nestedMenu = document.querySelector('#nested-111');
-nestedMenu.addEventListener('click',()=>{
-  console.log('nested');
- 
-});
+
 /****************** Mobile Click Dropdown active ************/
