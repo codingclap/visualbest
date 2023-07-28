@@ -267,6 +267,7 @@
 
 
  @media(min-width:1199px) {
+    
      .headermenu-main ul.headermenu-firstmenu li.primary-menu:hover {
          background: #fffce5;
          border-radius: 10px 10px 0px 0;
@@ -461,7 +462,10 @@
  }
 
  @media (max-width: 1199px) {
-      
+    .submenu-hide{
+        height: 0px;  
+         overflow: hidden; 
+   }
      .headermenu-main .submenu-container {
          padding: 10px 0px;
          position: relative;
@@ -473,6 +477,7 @@
 
      .nested-submenu-container .nested-subhead {
          font-size: 16px;
+         font-family: popping-regular;
      }
 
      ul.nested-submenu {
