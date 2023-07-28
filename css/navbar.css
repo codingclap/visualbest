@@ -263,7 +263,31 @@
 
 
 
+.headermenu-main ul.headermenu-firstmenu li.primary-menu>a:after {
+    position: absolute;
+    content: " ";
+    width: 11px;
+    height: 10px;
+    background-image: url(../images/arrow-down.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 45%;
+    right: 9px;
+    transition: all 0.3s;
+}
 
+.submenu-container .nested-subhead:after{
+    position: absolute;
+    content: " ";
+    width: 11px;
+    height: 10px;
+    background-image: url(../images/arrow-down.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 45%;
+    right: 9px;
+    transition: all 0.3s;
+}
 
 
  @media(min-width:1199px) {
@@ -295,6 +319,8 @@
          top: 42%;
          transform: rotate(-180deg);
      }
+
+     
  }
 
  .primary-bg-active {
@@ -411,6 +437,11 @@
      transform: rotate(-180deg) !important;
      background-image: url(../images/arrow-up.png) !important;
  }
+ .secondary-link-color:after {
+    transform: rotate(-180deg) !important;
+    background-image: url(../images/arrow-down.png) !important;
+}
+
 
  .primary-dropdown-display {
      display: block !important;
