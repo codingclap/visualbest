@@ -244,42 +244,42 @@
  }
 
  .headermenu-main ul.headermenu-firstmenu li.primary-menu a.primary-links {
-    border-radius: 8px 8px 0 0;
-    text-align: left;
-    position: relative;
-    display: block;
-    padding: 35px 10px;
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: -.0045em;
-    color: #222;
-    text-decoration: none;
-    word-break: initial;
-    cursor: pointer !important;
-    padding-right: 25px;
-}
+     border-radius: 8px 8px 0 0;
+     text-align: left;
+     position: relative;
+     display: block;
+     padding: 35px 10px;
+     font-family: inherit;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 100%;
+     letter-spacing: -.0045em;
+     color: #222;
+     text-decoration: none;
+     word-break: initial;
+     cursor: pointer !important;
+     padding-right: 25px;
+ }
 
 
 
-.headermenu-main ul.headermenu-firstmenu li.primary-menu>a:after {
-    position: absolute;
-    content: " ";
-    width: 11px;
-    height: 10px;
-    background-image: url(../images/arrow-down.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    top: 45%;
-    right: 9px;
-    transition: all 0.3s;
-}
+ .headermenu-main ul.headermenu-firstmenu li.primary-menu>a:after {
+     position: absolute;
+     content: " ";
+     width: 11px;
+     height: 10px;
+     background-image: url(../images/arrow-down.png);
+     background-size: contain;
+     background-repeat: no-repeat;
+     top: 45%;
+     right: 9px;
+     transition: all 0.3s;
+ }
 
 
 
  @media(min-width:1199px) {
-    
+
      .headermenu-main ul.headermenu-firstmenu li.primary-menu:hover {
          background: #fffce5;
          border-radius: 10px 10px 0px 0;
@@ -288,7 +288,7 @@
      .headermenu-main ul.headermenu-firstmenu li.primary-menu:hover a.primary-links {
          color: #ff6200;
      }
- 
+
      .headermenu-main ul.headermenu-firstmenu li.primary-menu>a:after {
          position: absolute;
          content: " ";
@@ -308,7 +308,7 @@
          transform: rotate(-180deg);
      }
 
-     
+
  }
 
  .primary-bg-active {
@@ -329,6 +329,27 @@
      display: block;
  }
 
+ #menu-item-112:hover>.submenu-container {
+     display: block;
+ }
+ #menu-item-113:hover>.submenu-container {
+    display: block;
+}
+#menu-item-114:hover>.submenu-container {
+    display: block;
+}
+#menu-item-115:hover>.submenu-container {
+    display: block;
+}
+#menu-item-116:hover>.submenu-container {
+    display: block;
+}
+#menu-item-117:hover>.submenu-container {
+    display: block;
+}
+#menu-item-118:hover>.submenu-container {
+    display: block;
+}
  .headermenu-main .submenu-container {
      width: 100%;
      background-color: #fffce5;
@@ -425,10 +446,11 @@
      transform: rotate(-180deg) !important;
      background-image: url(../images/arrow-up.png) !important;
  }
+
  .secondary-link-color:after {
-    transform: rotate(-180deg) !important;
-    background-image: url(../images/arrow-down.png) !important;
-}
+     transform: rotate(-180deg) !important;
+     background-image: url(../images/arrow-down.png) !important;
+ }
 
 
  .primary-dropdown-display {
@@ -481,23 +503,24 @@
  }
 
  @media (max-width: 1199px) {
-    .submenu-container .nested-subhead:after{
-        position: absolute;
-        content: " ";
-        width: 11px;
-        height: 10px;
-        background-image: url(../images/arrow-down.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        top: 45%;
-        right: 9px;
-        transition: all 0.3s;
-    }
-    
-    .submenu-hide{
-        height: 0px;  
-         overflow: hidden; 
-   }
+     .submenu-container .nested-subhead:after {
+         position: absolute;
+         content: " ";
+         width: 11px;
+         height: 10px;
+         background-image: url(../images/arrow-down.png);
+         background-size: contain;
+         background-repeat: no-repeat;
+         top: 45%;
+         right: 9px;
+         transition: all 0.3s;
+     }
+
+     .submenu-hide {
+         height: 0px;
+         overflow: hidden;
+     }
+
      .headermenu-main .submenu-container {
          padding: 10px 0px;
          position: relative;
