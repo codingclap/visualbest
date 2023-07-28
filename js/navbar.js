@@ -92,14 +92,14 @@ secondaryMenu.forEach((element, index) => {
 
 
     if (element.classList.contains("second-drop-active")) {
-      element.querySelector('.nested-subhead').style = "font-family:popping-regular";
+      element.querySelector('.nested-subhead').style = "font-weight:100";
       element.classList.remove("second-drop-active");
       element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
       element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
 
     } else {
       element.classList.add("second-drop-active");
-      element.querySelector('.nested-subhead').style = "font-family:popping-semibold";
+      element.querySelector('.nested-subhead').style = "font-weight:600";
       element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
       element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
     }
