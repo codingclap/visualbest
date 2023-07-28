@@ -77,6 +77,7 @@ secondaryMenu.forEach((element, index) => {
 
   secondaryTrigger = element.querySelector('.nested-subhead');
   submenu = element.querySelector('.submenu-container');
+  
   secondaryTrigger.addEventListener('click', () => {
     console.log(element);
 
