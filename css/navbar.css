@@ -332,24 +332,31 @@
  #menu-item-112:hover>.submenu-container {
      display: block;
  }
+
  #menu-item-113:hover>.submenu-container {
-    display: block;
-}
-#menu-item-114:hover>.submenu-container {
-    display: block;
-}
-#menu-item-115:hover>.submenu-container {
-    display: block;
-}
-#menu-item-116:hover>.submenu-container {
-    display: block;
-}
-#menu-item-117:hover>.submenu-container {
-    display: block;
-}
-#menu-item-118:hover>.submenu-container {
-    display: block;
-}
+     display: block;
+ }
+
+ #menu-item-114:hover>.submenu-container {
+     display: block;
+ }
+
+ #menu-item-115:hover>.submenu-container {
+     display: block;
+ }
+
+ #menu-item-116:hover>.submenu-container {
+     display: block;
+ }
+
+ #menu-item-117:hover>.submenu-container {
+     display: block;
+ }
+
+ #menu-item-118:hover>.submenu-container {
+     display: block;
+ }
+
  .headermenu-main .submenu-container {
      width: 100%;
      background-color: #fffce5;
@@ -503,6 +510,13 @@
  }
 
  @media (max-width: 1199px) {
+
+     .submenu-tiles {
+         width: 100%!important;
+         max-width: 292px!important;
+         padding:20px 0px 10px 0px!important;
+     }
+
      .submenu-container .nested-subhead:after {
          position: absolute;
          content: " ";
@@ -577,27 +591,34 @@
      #menu-item-111:hover>.submenu-container {
          display: none;
      }
+
      #menu-item-112:hover>.submenu-container {
-        display: none;
-    }
-    #menu-item-113:hover>.submenu-container {
-        display: none;
-    }
-    #menu-item-114:hover>.submenu-container {
-        display: none;
-    }
-    #menu-item-115:hover>.submenu-container {
-        display: none;
-    }
-    #menu-item-116:hover>.submenu-container {
-        display: none;
-    }
-    #menu-item-117:hover>.submenu-container {
-        display: none;
-    }
-    #menu-item-118:hover>.submenu-container {
-        display: none;
-    }
+         display: none;
+     }
+
+     #menu-item-113:hover>.submenu-container {
+         display: none;
+     }
+
+     #menu-item-114:hover>.submenu-container {
+         display: none;
+     }
+
+     #menu-item-115:hover>.submenu-container {
+         display: none;
+     }
+
+     #menu-item-116:hover>.submenu-container {
+         display: none;
+     }
+
+     #menu-item-117:hover>.submenu-container {
+         display: none;
+     }
+
+     #menu-item-118:hover>.submenu-container {
+         display: none;
+     }
 
      .headermenu-main ul.headermenu-firstmenu li.primary-menu>a.primary-links:before {
          opacity: .4;
@@ -640,7 +661,7 @@
          z-index: +9999;
          width: 100%;
          overflow: auto;
-         bottom: 0px; 
+         bottom: 0px;
      }
 
 
