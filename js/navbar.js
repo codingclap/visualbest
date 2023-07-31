@@ -7,7 +7,7 @@ toggleMenu.addEventListener('click', (e) => {
     document.querySelector('.page-header .burger span:nth-child(2)').style = "left:-10px;opacity:0";
     document.querySelector('.page-header .burger span:nth-child(3)').style = "top:8px;transform:rotate(-135deg);";
 
-    document.querySelector('.headermenu-main').style = "height:100vh";
+    document.querySelector('.headermenu-main').style = "height:100vh;padding-bottom: 6em;";
   } else {
     e.currentTarget.dataset.hamberger = 'closed';
     document.querySelector('.page-header .burger span:nth-child(1)').style = "top:0px;transform:rotate(0deg);";
@@ -55,6 +55,7 @@ primaryMenu.forEach((element, index) => {
   submenu = element.querySelector('.submenu-container');
 
   primaryTrigger.addEventListener('click', () => {
+
     if (element.classList.contains("primary-bg-active")) {
       element.classList.remove("primary-bg-active");
       element.querySelector('a.primary-links').classList.remove("primary-link-color");
@@ -67,11 +68,13 @@ primaryMenu.forEach((element, index) => {
     }
 
   });
-
+   
 });
+/****************** Mobile Click Dropdown active ************/
 
 
 
+/****************** Sub Dropdown  ************/
 let secondaryMenu = document.querySelectorAll('.submenu-1');
 let secondaryTrigger;
 let submenudrop;
@@ -315,7 +318,4 @@ secondaryMenu8.forEach((element, index) => {
  
 });
 
-
- 
-
-/****************** Mobile Click Dropdown active ************/
+/****************** Sub Dropdown  ************/

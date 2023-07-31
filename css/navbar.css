@@ -640,7 +640,7 @@
          z-index: +9999;
          width: 100%;
          overflow: auto;
-         bottom: 0px;
+         bottom: 0px; 
      }
 
 
