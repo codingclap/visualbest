@@ -70,16 +70,17 @@ primaryMenu.forEach((element, index) => {
 
 });
 
-let secondaryMenu = document.querySelectorAll('.submenu-item');
+
+
+let secondaryMenu = document.querySelectorAll('.submenu-1');
 let secondaryTrigger;
 let submenudrop;
 secondaryMenu.forEach((element, index) => {
-
-  secondaryTrigger = element.querySelector('.nested-subhead');
-  submenu = element.querySelector('.submenu-container');
   
+  secondaryTrigger = element.querySelector('.nested-subhead');
+   
   secondaryTrigger.addEventListener('click', () => {
-    console.log(element);
+    //console.log(element);
 
 
     if (element.classList.contains("second-drop-active")) {
@@ -98,5 +99,223 @@ secondaryMenu.forEach((element, index) => {
   });
 
 });
+
+
+let secondaryMenu2 = document.querySelectorAll('.submenu-2');
+let secondaryTrigger2;
+let submenudrop2;
+secondaryMenu2.forEach((element, index) => {
+   
+  
+  secondaryTrigger2 = element.querySelector('.nested-subhead');
+   
+  secondaryTrigger2.addEventListener('click', () => {
+    //console.log(element);
+
+
+    if (element.classList.contains("second-drop-active")) {
+      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
+      element.classList.remove("second-drop-active");
+      element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
+      element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
+
+    } else {
+      element.classList.add("second-drop-active");
+      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
+      element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
+      element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
+    }
+
+  });
+ 
+});
+
+
+
+let secondaryMenu3 = document.querySelectorAll('.submenu-3');
+let secondaryTrigger3;
+let submenudrop3;
+secondaryMenu3.forEach((element, index) => {
+   
+  
+  secondaryTrigger3 = element.querySelector('.nested-subhead');
+   
+  secondaryTrigger3.addEventListener('click', () => {
+    //console.log(element);
+
+
+    if (element.classList.contains("second-drop-active")) {
+      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
+      element.classList.remove("second-drop-active");
+      element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
+      element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
+
+    } else {
+      element.classList.add("second-drop-active");
+      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
+      element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
+      element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
+    }
+
+  });
+ 
+});
+
+
+
+let secondaryMenu4 = document.querySelectorAll('.submenu-4');
+let secondaryTrigger4;
+let submenudrop4;
+secondaryMenu4.forEach((element, index) => {
+   
+  
+  secondaryTrigger4 = element.querySelector('.nested-subhead');
+   
+  secondaryTrigger4.addEventListener('click', () => {
+    //console.log(element);
+
+
+    if (element.classList.contains("second-drop-active")) {
+      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
+      element.classList.remove("second-drop-active");
+      element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
+      element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
+
+    } else {
+      element.classList.add("second-drop-active");
+      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
+      element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
+      element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
+    }
+
+  });
+ 
+});
+
+
+
+let secondaryMenu5 = document.querySelectorAll('.submenu-5');
+let secondaryTrigger5;
+let submenudrop5;
+secondaryMenu5.forEach((element, index) => {
+   
+  
+  secondaryTrigger5 = element.querySelector('.nested-subhead');
+   
+  secondaryTrigger5.addEventListener('click', () => {
+    //console.log(element);
+
+
+    if (element.classList.contains("second-drop-active")) {
+      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
+      element.classList.remove("second-drop-active");
+      element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
+      element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
+
+    } else {
+      element.classList.add("second-drop-active");
+      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
+      element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
+      element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
+    }
+
+  });
+ 
+});
+
+
+
+let secondaryMenu6 = document.querySelectorAll('.submenu-6');
+let secondaryTrigger6;
+let submenudrop6;
+secondaryMenu6.forEach((element, index) => {
+   
+  
+  secondaryTrigger6 = element.querySelector('.nested-subhead');
+   
+  secondaryTrigger6.addEventListener('click', () => {
+    //console.log(element);
+
+
+    if (element.classList.contains("second-drop-active")) {
+      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
+      element.classList.remove("second-drop-active");
+      element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
+      element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
+
+    } else {
+      element.classList.add("second-drop-active");
+      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
+      element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
+      element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
+    }
+
+  });
+ 
+});
+
+
+
+let secondaryMenu7 = document.querySelectorAll('.submenu-7');
+let secondaryTrigger7;
+let submenudrop7;
+secondaryMenu7.forEach((element, index) => {
+   
+  
+  secondaryTrigger7 = element.querySelector('.nested-subhead');
+   
+  secondaryTrigger7.addEventListener('click', () => {
+    //console.log(element);
+
+
+    if (element.classList.contains("second-drop-active")) {
+      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
+      element.classList.remove("second-drop-active");
+      element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
+      element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
+
+    } else {
+      element.classList.add("second-drop-active");
+      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
+      element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
+      element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
+    }
+
+  });
+ 
+});
+
+
+let secondaryMenu8 = document.querySelectorAll('.submenu-8');
+let secondaryTrigger8;
+let submenudrop8;
+secondaryMenu8.forEach((element, index) => {
+   
+  
+  secondaryTrigger8 = element.querySelector('.nested-subhead');
+   
+  secondaryTrigger8.addEventListener('click', () => {
+    //console.log(element);
+
+
+    if (element.classList.contains("second-drop-active")) {
+      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
+      element.classList.remove("second-drop-active");
+      element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
+      element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
+
+    } else {
+      element.classList.add("second-drop-active");
+      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
+      element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
+      element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
+    }
+
+  });
+ 
+});
+
+
+ 
 
 /****************** Mobile Click Dropdown active ************/
