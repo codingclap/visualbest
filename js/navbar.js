@@ -66,6 +66,7 @@ toggleMenu.addEventListener('click', (e) => {
   for (object of objects) {
     if (object.contentRect.width < 1199) {
  
+     // alert(object.contentRect.width);
 /****************** Mobile Click Dropdown active ************/
 
 let primaryMenu = document.querySelectorAll('.primary-menu');

@@ -279,6 +279,25 @@
 
 
  @media(min-width:1199px) {
+     .nested-submenu-container .nested-submenu li.secondary-menu a:after {
+         content: "";
+         position: absolute;
+         width: 22px;
+         height: 10px;
+         top: 13px;
+         margin-left: 0px;
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-image: url('../images/orange-arrows.svg');
+        opacity:0;
+         transition: all 0.3s;
+     }
+
+     .nested-submenu-container .nested-submenu li.secondary-menu:hover a:after {
+        margin-left: 10px;
+        opacity:1;
+        transition: all 0.3s;
+     }
 
      .headermenu-main ul.headermenu-firstmenu li.primary-menu:hover {
          background: #fffce5;
@@ -289,7 +308,7 @@
          color: #ff6200;
      }
 
-     .headermenu-main ul.headermenu-firstmenu li.primary-menu>a:after {
+     .headermenu-main ul.headermenu-firstmenu li.primary-menu>a.primary-links:after {
          position: absolute;
          content: " ";
          width: 11px;
@@ -302,7 +321,7 @@
          transition: all 0.3s;
      }
 
-     .headermenu-main ul.headermenu-firstmenu li.primary-menu:hover a:after {
+     .headermenu-main ul.headermenu-firstmenu li.primary-menu:hover a.primary-links:after {
          background-image: url(../images/arrow-up.png);
          top: 42%;
          transform: rotate(-180deg);
@@ -512,9 +531,9 @@
  @media (max-width: 1199px) {
 
      .submenu-tiles {
-         width: 100%!important;
-         max-width: 292px!important;
-         padding:20px 0px 10px 0px!important;
+         width: 100% !important;
+         max-width: 292px !important;
+         padding: 20px 0px 10px 0px !important;
      }
 
      .submenu-container .nested-subhead:after {
