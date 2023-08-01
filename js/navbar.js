@@ -23,35 +23,35 @@ toggleMenu.addEventListener('click', (e) => {
 
 
 
-let dropdownbox = document.querySelector('#headermenu');
-new ResizeObserver((objects) => {
+// let dropdownbox = document.querySelector('#headermenu');
+// new ResizeObserver((objects) => {
 
-  for (object of objects) {
-    if (object.contentRect.width > 1199) {
-      //console.log(object.contentRect.width);
-      document.querySelector('.headermenu-main').style = "height:auto";
+//   for (object of objects) {
+//     if (object.contentRect.width > 1199) {
+//       //console.log(object.contentRect.width);
+//       document.querySelector('.headermenu-main').style = "height:auto";
      
-      document.querySelector('#menu-item-111').classList.remove('primaryMenu');
-      document.querySelector('#menu-item-112').classList.remove('primaryMenu');
-      document.querySelector('#menu-item-113').classList.remove('primaryMenu');
-      document.querySelector('#menu-item-114').classList.remove('primaryMenu');
-      document.querySelector('#menu-item-115').classList.remove('primaryMenu');
-      document.querySelector('#menu-item-116').classList.remove('primaryMenu');
-      document.querySelector('#menu-item-117').classList.remove('primaryMenu');
-      document.querySelector('#menu-item-118').classList.remove('primaryMenu');
-    }else{
-      document.querySelector('#menu-item-111').classList.add('primaryMenu');
-      document.querySelector('#menu-item-112').classList.add('primaryMenu');
-      document.querySelector('#menu-item-113').classList.add('primaryMenu');
-      document.querySelector('#menu-item-114').classList.add('primaryMenu');
-      document.querySelector('#menu-item-115').classList.add('primaryMenu');
-      document.querySelector('#menu-item-116').classList.add('primaryMenu');
-      document.querySelector('#menu-item-117').classList.add('primaryMenu');
-      document.querySelector('#menu-item-118').classList.add('primaryMenu');
-    }
-  }
+//       document.querySelector('#menu-item-111').classList.remove('primaryMenu');
+//       document.querySelector('#menu-item-112').classList.remove('primaryMenu');
+//       document.querySelector('#menu-item-113').classList.remove('primaryMenu');
+//       document.querySelector('#menu-item-114').classList.remove('primaryMenu');
+//       document.querySelector('#menu-item-115').classList.remove('primaryMenu');
+//       document.querySelector('#menu-item-116').classList.remove('primaryMenu');
+//       document.querySelector('#menu-item-117').classList.remove('primaryMenu');
+//       document.querySelector('#menu-item-118').classList.remove('primaryMenu');
+//     }else{
+//       document.querySelector('#menu-item-111').classList.add('primaryMenu');
+//       document.querySelector('#menu-item-112').classList.add('primaryMenu');
+//       document.querySelector('#menu-item-113').classList.add('primaryMenu');
+//       document.querySelector('#menu-item-114').classList.add('primaryMenu');
+//       document.querySelector('#menu-item-115').classList.add('primaryMenu');
+//       document.querySelector('#menu-item-116').classList.add('primaryMenu');
+//       document.querySelector('#menu-item-117').classList.add('primaryMenu');
+//       document.querySelector('#menu-item-118').classList.add('primaryMenu');
+//     }
+//   }
 
-}).observe(dropdownbox)
+// }).observe(dropdownbox)
 /********** Size Observer **********/
 
 
@@ -60,8 +60,12 @@ new ResizeObserver((objects) => {
 
 
 
+ let dropdownbox = document.querySelector('#headermenu');
+ new ResizeObserver((objects) => {
 
-
+  for (object of objects) {
+    if (object.contentRect.width < 1199) {
+ 
 /****************** Mobile Click Dropdown active ************/
 
 let primaryMenu = document.querySelectorAll('.primary-menu');
@@ -72,7 +76,7 @@ primaryMenu.forEach((element, index) => {
   primaryTrigger = element.querySelector('.primary-links');
   submenu = element.querySelector('.submenu-container');
 
-  primaryTrigger.addEventListener('click', () => {
+  primaryTrigger.addEventListener('click', () => { 
 
     if (element.classList.contains("primary-bg-active")) {
       element.classList.remove("primary-bg-active");
@@ -337,3 +341,7 @@ secondaryMenu8.forEach((element, index) => {
 });
 
 /****************** Sub Dropdown  ************/
+    }
+}
+
+}).observe(dropdownbox);
