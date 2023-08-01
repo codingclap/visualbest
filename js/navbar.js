@@ -14,7 +14,7 @@ toggleMenu.addEventListener('click', (e) => {
     document.querySelector('.page-header .burger span:nth-child(2)').style = "left:0;opacity:1";
     document.querySelector('.page-header .burger span:nth-child(3)').style = "top:16px;transform:rotate(0deg);";
 
-    document.querySelector('.headermenu-main').style = "height:0vh";
+    document.querySelector('.headermenu-main').style = "";
   }
   console.log(e.currentTarget.dataset.hamberger === "closed");
 });
