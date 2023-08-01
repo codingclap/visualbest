@@ -18,6 +18,10 @@
 
 <body>
   <!---------------------- Navbar ---------------------->
+  <div class="notification noti-show">
+     <p>Lorim ipsum Lorim ipsum Lorim ipsum Lorim ipsum Lorim ipsum Lorim ipsum Lorim ipsum </p>
+     <img src="images/cross.svg" alt="" id="noti-closed">
+  </div>
   <header id="page-header" class="page-header">
 
     <!------header top ------>
@@ -46,6 +50,9 @@
         <div class="headermenu-inner">
           <div class="headermenu-logo">
             <img src="images/visualbest-logo.png" alt="">
+            
+            <img id="we-are-hiring" src="images/we-are-hiring.svg" alt="">
+            
           </div>
           <a href="javascript:void(0)" class="menu-toggle" data-hamberger="closed">
             <span class="burger">
@@ -2428,18 +2435,7 @@
   <script src="js/jquery-3.6.js"></script>
   <script src="js/search-bar.js"></script>
 
-
-  <script>
-    window.onscroll = function (e) {
-      // log the length scrolled vertically
-      if (window.pageYOffset >= 50) {
-        document.getElementById('headermenu').style = "position: fixed;left: 0px;top:0px; transition: 0.3s ease-in-out;box-shadow: rgba(3,27,78,.1) 0 2px 4px;";
-
-      } else {
-        document.getElementById('headermenu').style = "position: sticky;left: 0px;top:0px; transition: 0.3s ease-in-out;";
-      }
-    }
-  </script>
+ 
 </body>
 
 </html>

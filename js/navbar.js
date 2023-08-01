@@ -20,8 +20,27 @@ toggleMenu.addEventListener('click', (e) => {
 });
 /********** Primary Dropdown With Hamberger **********/
 
+let notify = document.querySelector('.notification');
+let noti_closed = document.querySelector('#noti-closed');
+noti_closed.addEventListener('click', () => {
+  notify.classList.remove('noti-show');
+});
 
+window.onscroll = function (e) {
 
+  // log the length scrolled vertically
+  if (window.pageYOffset >= 50) {
+    let notiStatus = document.querySelector('.notification').classList.contains('noti-show');
+    if (notiStatus === true) {
+      document.getElementById('headermenu').style = "position: fixed;left: 0px;top:50px; transition: 0.3s ease-in-out;box-shadow: rgba(3,27,78,.1) 0 2px 4px;";
+    } else {
+      document.getElementById('headermenu').style = "position: fixed;left: 0px;top:0px; transition: 0.3s ease-in-out;box-shadow: rgba(3,27,78,.1) 0 2px 4px;";
+    }
+
+  } else {
+    document.getElementById('headermenu').style = "position: sticky;left: 0px;top:0px; transition: 0.3s ease-in-out;";
+  }
+}
 
 // let dropdownbox = document.querySelector('#headermenu');
 // new ResizeObserver((objects) => {
@@ -30,7 +49,7 @@ toggleMenu.addEventListener('click', (e) => {
 //     if (object.contentRect.width > 1199) {
 //       //console.log(object.contentRect.width);
 //       document.querySelector('.headermenu-main').style = "height:auto";
-     
+
 //       document.querySelector('#menu-item-111').classList.remove('primaryMenu');
 //       document.querySelector('#menu-item-112').classList.remove('primaryMenu');
 //       document.querySelector('#menu-item-113').classList.remove('primaryMenu');
@@ -60,289 +79,289 @@ toggleMenu.addEventListener('click', (e) => {
 
 
 
- let dropdownbox = document.querySelector('#headermenu');
- new ResizeObserver((objects) => {
+let dropdownbox = document.querySelector('#headermenu');
+new ResizeObserver((objects) => {
 
   for (object of objects) {
     if (object.contentRect.width < 1199) {
- 
-     // alert(object.contentRect.width);
-/****************** Mobile Click Dropdown active ************/
 
-let primaryMenu = document.querySelectorAll('.primary-menu');
-let primaryTrigger;
-let submenu;
-primaryMenu.forEach((element, index) => {
+      // alert(object.contentRect.width);
+      /****************** Mobile Click Dropdown active ************/
 
-  primaryTrigger = element.querySelector('.primary-links');
-  submenu = element.querySelector('.submenu-container');
+      let primaryMenu = document.querySelectorAll('.primary-menu');
+      let primaryTrigger;
+      let submenu;
+      primaryMenu.forEach((element, index) => {
 
-  primaryTrigger.addEventListener('click', () => { 
+        primaryTrigger = element.querySelector('.primary-links');
+        submenu = element.querySelector('.submenu-container');
 
-    if (element.classList.contains("primary-bg-active")) {
-      element.classList.remove("primary-bg-active");
-      element.querySelector('a.primary-links').classList.remove("primary-link-color");
-      element.querySelector('div.submenu-container').classList.remove("primary-dropdown-display");
+        primaryTrigger.addEventListener('click', () => {
 
-    } else {
-      element.classList.add("primary-bg-active");
-      element.querySelector('a.primary-links').classList.add("primary-link-color");
-      element.querySelector('div.submenu-container').classList.add("primary-dropdown-display");
+          if (element.classList.contains("primary-bg-active")) {
+            element.classList.remove("primary-bg-active");
+            element.querySelector('a.primary-links').classList.remove("primary-link-color");
+            element.querySelector('div.submenu-container').classList.remove("primary-dropdown-display");
+
+          } else {
+            element.classList.add("primary-bg-active");
+            element.querySelector('a.primary-links').classList.add("primary-link-color");
+            element.querySelector('div.submenu-container').classList.add("primary-dropdown-display");
+          }
+
+        });
+
+      });
+      /****************** Mobile Click Dropdown active ************/
+
+
+
+      /****************** Sub Dropdown  ************/
+      let secondaryMenu = document.querySelectorAll('.submenu-1');
+      let secondaryTrigger;
+      let submenudrop;
+      secondaryMenu.forEach((element, index) => {
+
+        secondaryTrigger = element.querySelector('.nested-subhead');
+
+        secondaryTrigger.addEventListener('click', () => {
+          //console.log(element);
+
+
+          if (element.classList.contains("second-drop-active")) {
+            element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
+            element.classList.remove("second-drop-active");
+            element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
+            element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
+
+          } else {
+            element.classList.add("second-drop-active");
+            element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
+            element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
+            element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
+          }
+
+        });
+
+      });
+
+
+      let secondaryMenu2 = document.querySelectorAll('.submenu-2');
+      let secondaryTrigger2;
+      let submenudrop2;
+      secondaryMenu2.forEach((element, index) => {
+
+
+        secondaryTrigger2 = element.querySelector('.nested-subhead');
+
+        secondaryTrigger2.addEventListener('click', () => {
+          //console.log(element);
+
+
+          if (element.classList.contains("second-drop-active")) {
+            element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
+            element.classList.remove("second-drop-active");
+            element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
+            element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
+
+          } else {
+            element.classList.add("second-drop-active");
+            element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
+            element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
+            element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
+          }
+
+        });
+
+      });
+
+
+
+      let secondaryMenu3 = document.querySelectorAll('.submenu-3');
+      let secondaryTrigger3;
+      let submenudrop3;
+      secondaryMenu3.forEach((element, index) => {
+
+
+        secondaryTrigger3 = element.querySelector('.nested-subhead');
+
+        secondaryTrigger3.addEventListener('click', () => {
+          //console.log(element);
+
+
+          if (element.classList.contains("second-drop-active")) {
+            element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
+            element.classList.remove("second-drop-active");
+            element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
+            element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
+
+          } else {
+            element.classList.add("second-drop-active");
+            element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
+            element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
+            element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
+          }
+
+        });
+
+      });
+
+
+
+      let secondaryMenu4 = document.querySelectorAll('.submenu-4');
+      let secondaryTrigger4;
+      let submenudrop4;
+      secondaryMenu4.forEach((element, index) => {
+
+
+        secondaryTrigger4 = element.querySelector('.nested-subhead');
+
+        secondaryTrigger4.addEventListener('click', () => {
+          //console.log(element);
+
+
+          if (element.classList.contains("second-drop-active")) {
+            element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
+            element.classList.remove("second-drop-active");
+            element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
+            element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
+
+          } else {
+            element.classList.add("second-drop-active");
+            element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
+            element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
+            element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
+          }
+
+        });
+
+      });
+
+
+
+      let secondaryMenu5 = document.querySelectorAll('.submenu-5');
+      let secondaryTrigger5;
+      let submenudrop5;
+      secondaryMenu5.forEach((element, index) => {
+
+
+        secondaryTrigger5 = element.querySelector('.nested-subhead');
+
+        secondaryTrigger5.addEventListener('click', () => {
+          //console.log(element);
+
+
+          if (element.classList.contains("second-drop-active")) {
+            element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
+            element.classList.remove("second-drop-active");
+            element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
+            element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
+
+          } else {
+            element.classList.add("second-drop-active");
+            element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
+            element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
+            element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
+          }
+
+        });
+
+      });
+
+
+
+      let secondaryMenu6 = document.querySelectorAll('.submenu-6');
+      let secondaryTrigger6;
+      let submenudrop6;
+      secondaryMenu6.forEach((element, index) => {
+
+
+        secondaryTrigger6 = element.querySelector('.nested-subhead');
+
+        secondaryTrigger6.addEventListener('click', () => {
+          //console.log(element);
+
+
+          if (element.classList.contains("second-drop-active")) {
+            element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
+            element.classList.remove("second-drop-active");
+            element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
+            element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
+
+          } else {
+            element.classList.add("second-drop-active");
+            element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
+            element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
+            element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
+          }
+
+        });
+
+      });
+
+
+
+      let secondaryMenu7 = document.querySelectorAll('.submenu-7');
+      let secondaryTrigger7;
+      let submenudrop7;
+      secondaryMenu7.forEach((element, index) => {
+
+
+        secondaryTrigger7 = element.querySelector('.nested-subhead');
+
+        secondaryTrigger7.addEventListener('click', () => {
+          //console.log(element);
+
+
+          if (element.classList.contains("second-drop-active")) {
+            element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
+            element.classList.remove("second-drop-active");
+            element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
+            element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
+
+          } else {
+            element.classList.add("second-drop-active");
+            element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
+            element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
+            element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
+          }
+
+        });
+
+      });
+
+
+      let secondaryMenu8 = document.querySelectorAll('.submenu-8');
+      let secondaryTrigger8;
+      let submenudrop8;
+      secondaryMenu8.forEach((element, index) => {
+
+
+        secondaryTrigger8 = element.querySelector('.nested-subhead');
+
+        secondaryTrigger8.addEventListener('click', () => {
+          //console.log(element);
+
+
+          if (element.classList.contains("second-drop-active")) {
+            element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
+            element.classList.remove("second-drop-active");
+            element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
+            element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
+
+          } else {
+            element.classList.add("second-drop-active");
+            element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
+            element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
+            element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
+          }
+
+        });
+
+      });
+
+      /****************** Sub Dropdown  ************/
     }
-
-  });
-   
-});
-/****************** Mobile Click Dropdown active ************/
-
-
-
-/****************** Sub Dropdown  ************/
-let secondaryMenu = document.querySelectorAll('.submenu-1');
-let secondaryTrigger;
-let submenudrop;
-secondaryMenu.forEach((element, index) => {
-  
-  secondaryTrigger = element.querySelector('.nested-subhead');
-   
-  secondaryTrigger.addEventListener('click', () => {
-    //console.log(element);
-
-
-    if (element.classList.contains("second-drop-active")) {
-      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
-      element.classList.remove("second-drop-active");
-      element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
-      element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
-
-    } else {
-      element.classList.add("second-drop-active");
-      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
-      element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
-      element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
-    }
-
-  });
-
-});
-
-
-let secondaryMenu2 = document.querySelectorAll('.submenu-2');
-let secondaryTrigger2;
-let submenudrop2;
-secondaryMenu2.forEach((element, index) => {
-   
-  
-  secondaryTrigger2 = element.querySelector('.nested-subhead');
-   
-  secondaryTrigger2.addEventListener('click', () => {
-    //console.log(element);
-
-
-    if (element.classList.contains("second-drop-active")) {
-      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
-      element.classList.remove("second-drop-active");
-      element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
-      element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
-
-    } else {
-      element.classList.add("second-drop-active");
-      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
-      element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
-      element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
-    }
-
-  });
- 
-});
-
-
-
-let secondaryMenu3 = document.querySelectorAll('.submenu-3');
-let secondaryTrigger3;
-let submenudrop3;
-secondaryMenu3.forEach((element, index) => {
-   
-  
-  secondaryTrigger3 = element.querySelector('.nested-subhead');
-   
-  secondaryTrigger3.addEventListener('click', () => {
-    //console.log(element);
-
-
-    if (element.classList.contains("second-drop-active")) {
-      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
-      element.classList.remove("second-drop-active");
-      element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
-      element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
-
-    } else {
-      element.classList.add("second-drop-active");
-      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
-      element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
-      element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
-    }
-
-  });
- 
-});
-
-
-
-let secondaryMenu4 = document.querySelectorAll('.submenu-4');
-let secondaryTrigger4;
-let submenudrop4;
-secondaryMenu4.forEach((element, index) => {
-   
-  
-  secondaryTrigger4 = element.querySelector('.nested-subhead');
-   
-  secondaryTrigger4.addEventListener('click', () => {
-    //console.log(element);
-
-
-    if (element.classList.contains("second-drop-active")) {
-      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
-      element.classList.remove("second-drop-active");
-      element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
-      element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
-
-    } else {
-      element.classList.add("second-drop-active");
-      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
-      element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
-      element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
-    }
-
-  });
- 
-});
-
-
-
-let secondaryMenu5 = document.querySelectorAll('.submenu-5');
-let secondaryTrigger5;
-let submenudrop5;
-secondaryMenu5.forEach((element, index) => {
-   
-  
-  secondaryTrigger5 = element.querySelector('.nested-subhead');
-   
-  secondaryTrigger5.addEventListener('click', () => {
-    //console.log(element);
-
-
-    if (element.classList.contains("second-drop-active")) {
-      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
-      element.classList.remove("second-drop-active");
-      element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
-      element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
-
-    } else {
-      element.classList.add("second-drop-active");
-      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
-      element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
-      element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
-    }
-
-  });
- 
-});
-
-
-
-let secondaryMenu6 = document.querySelectorAll('.submenu-6');
-let secondaryTrigger6;
-let submenudrop6;
-secondaryMenu6.forEach((element, index) => {
-   
-  
-  secondaryTrigger6 = element.querySelector('.nested-subhead');
-   
-  secondaryTrigger6.addEventListener('click', () => {
-    //console.log(element);
-
-
-    if (element.classList.contains("second-drop-active")) {
-      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
-      element.classList.remove("second-drop-active");
-      element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
-      element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
-
-    } else {
-      element.classList.add("second-drop-active");
-      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
-      element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
-      element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
-    }
-
-  });
- 
-});
-
-
-
-let secondaryMenu7 = document.querySelectorAll('.submenu-7');
-let secondaryTrigger7;
-let submenudrop7;
-secondaryMenu7.forEach((element, index) => {
-   
-  
-  secondaryTrigger7 = element.querySelector('.nested-subhead');
-   
-  secondaryTrigger7.addEventListener('click', () => {
-    //console.log(element);
-
-
-    if (element.classList.contains("second-drop-active")) {
-      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
-      element.classList.remove("second-drop-active");
-      element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
-      element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
-
-    } else {
-      element.classList.add("second-drop-active");
-      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
-      element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
-      element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
-    }
-
-  });
- 
-});
-
-
-let secondaryMenu8 = document.querySelectorAll('.submenu-8');
-let secondaryTrigger8;
-let submenudrop8;
-secondaryMenu8.forEach((element, index) => {
-   
-  
-  secondaryTrigger8 = element.querySelector('.nested-subhead');
-   
-  secondaryTrigger8.addEventListener('click', () => {
-    //console.log(element);
-
-
-    if (element.classList.contains("second-drop-active")) {
-      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px -1px #2b2a2b";
-      element.classList.remove("second-drop-active");
-      element.querySelector('ul.nested-submenu').classList.add("submenu-hide");
-      element.querySelector('span.nested-subhead').classList.remove("secondary-link-color");
-
-    } else {
-      element.classList.add("second-drop-active");
-      element.querySelector('.nested-subhead').style = "text-shadow:0px 0px 0px #000";
-      element.querySelector('ul.nested-submenu').classList.remove("submenu-hide");
-      element.querySelector('span.nested-subhead').classList.add("secondary-link-color");
-    }
-
-  });
- 
-});
-
-/****************** Sub Dropdown  ************/
-    }
-}
+  }
 
 }).observe(dropdownbox);
