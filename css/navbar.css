@@ -574,7 +574,11 @@ ul.nested-submenu {
 }
 
 @media (max-width: 1199px) {
-
+    #headermenu .headermenu-inner #we-are-hiring { 
+        top: -10px;
+        left: -5px; 
+        max-width: 130px; 
+    }
     .submenu-tiles {
         width: 100% !important;
         max-width: 292px !important;
