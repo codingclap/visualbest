@@ -803,6 +803,29 @@
     <!------------------ Section 5 --------------------->
 
     <!------------------ We Provide Services --------------------->
+    <style>
+        ul.service-list-item {
+            padding-left: 40px;
+        }
+
+        .service-list-item li {
+            padding: 5px 0px;
+            position: relative;
+            font-size: 16px;
+        }
+
+        .service-list-item li:before {
+            content: " ";
+            position: absolute;
+            background-image: url('images/check.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            left: -40px;
+            top: 11px;
+        }
+    </style>
     <section id="services-list" class="">
         <div class="container-fluid" data-bgcolor="white">
             <div class="container">
@@ -822,30 +845,33 @@
                             all scales, we firmly believe that exceptional design thrives on passion, intelligence, and
                             unwavering personal commitment.</p>
                     </div>
-                    <div class="col-12 col-md-12 col-lg-6">
-                        <h6 class="text-center" data-heading="25px" data-font-style="popping-semibold"
-                            line-height="1.5em">We provide services for:</h6>
+                    <div
+                        class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center justify-content-lg-start align-items-center align-items-lg-end">
+                        <div class="service-list" style="width:312px;">
+                            <h6 data-heading="25px" data-font-style="popping-semibold" line-height="1.5em">We provide
+                                services for:</h6>
 
-                        <ul class="">
-                            <li>Logos and Branding Designs</li>
-                            <li>Advertisement and Marketing Designs</li>
-                            <li>UI/UX Graphic Designs</li>
-                            <li>Annual Report Designs</li>
-                            <li>Presentation Designs</li>
-                            <li>Marketing Graphic Designs</li>
-                            <li>Web Designs</li>
-                            <li>Googel Web Stories Designs</li>
-                            <li>and many more things</li>
-                        </ul>
-                        <div class="cta-pair__button text-center">
-                            <a data-category-search-cta=""
-                                class="button button--jumbo button--primary button--responsive" href="/categories"
-                                data-font-style="popping-semibold">
-                                <span class="button__inner">
-                                    <span class="button__label">
-                                        Explore Portfolio</span> 
-                                </span>
-                            </a>
+                            <ul class="service-list-item py-3 list-unstyled">
+                                <li>Logos and Branding Designs</li>
+                                <li>Advertisement and Marketing Designs</li>
+                                <li>UI/UX Graphic Designs</li>
+                                <li>Annual Report Designs</li>
+                                <li>Presentation Designs</li>
+                                <li>Marketing Graphic Designs</li>
+                                <li>Web Designs</li>
+                                <li>Googel Web Stories Designs</li>
+                                <li>and many more things</li>
+                            </ul>
+                            <div class="cta-pair__button">
+                                <a data-category-search-cta=""
+                                    class="button button--jumbo button--primary button--responsive" href="/categories"
+                                    data-font-style="popping-semibold">
+                                    <span class="button__inner">
+                                        <span class="button__label">
+                                            Explore Portfolio</span>
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -853,6 +879,36 @@
         </div>
     </section>
     <!------------------ We Provide Services --------------------->
+
+
+    <!------------------ CTA TILES --------------------->
+    <style>
+        #cta_Tiles {
+            background-image: url('images/tiles-bg.svg');
+            background-size: cover;
+        }
+    </style>
+    <section id="cta_Tiles" class="">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-12 col-md-12 col-lg-10 mt-5 mb-5">
+                        <h3 class="text-center" data-heading="3em" data-font-style="popping-bold" data-color="white">We
+                            create Designs you remember
+                        </h3>
+                        <p class="pt-2 pt-md-3 pb-3 text-center" data-font-style="popping-regular" data-para="17px"
+                            line-height="1.5em" data-color="white">Take a moment to explore our diverse range of graphic design projects,
+                            including report design, presentation design, Google web stories, brand design, cover
+                            design, brochures, and more. We are proud to showcase our extensive portfolio, highlighting
+                            our expertise and creativity in various design domains. </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------ CTA TILES --------------------->
+
 
 
     <!----------------------  Footer Section ---------------------->
@@ -881,7 +937,8 @@
                 <div class="col-12 col-md-6 col-lg-3 pt-4 pt-lg-0">
                     <ul class="footer-menu">
                         <li>
-                            <h5 class="mb-1" data-font-style="popping-semibold" data-heading="25px">SERVICES</h5>
+                            <h5 class="mb-1" data-font-style="popping-semibold" data-heading="25px">SERVICES
+                            </h5>
                         </li>
                         <li><a href="">Graphic Design</a></li>
                         <li><a href="">Digital Illustration</a></li>
