@@ -248,7 +248,9 @@ body{
   text-decoration: none;
   font-weight: bold;
 }
-
+a:hover{
+  color:inherit;
+}
 .button {
   font-family: popping-semibold;
   font-size: 20px;
@@ -265,17 +267,18 @@ body{
 }
 
 .button__inner {
-  min-height: 54px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 30px;
+  padding: 10px 30px;
 }
 
 @media(max-width:500px) {
   
   .button__inner {
-      padding: 12px 22px;
+      padding: 8px 22px;
+      min-height: 40px;
   }
 
   .button {
