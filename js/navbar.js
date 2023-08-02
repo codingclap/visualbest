@@ -32,7 +32,7 @@ window.onscroll = function (e) {
   if (window.pageYOffset >= 50) {
     let notiStatus = document.querySelector('.notification').classList.contains('noti-show');
     if (notiStatus === true) {
-      document.getElementById('headermenu').style = "position: fixed;left: 0px;top:50px; transition: 0.3s ease-in-out;box-shadow: rgba(3,27,78,.1) 0 2px 4px;";
+      document.getElementById('headermenu').style = "position: fixed;left: 0px;top:70px; transition: 0.3s ease-in-out;box-shadow: rgba(3,27,78,.1) 0 2px 4px;";
     } else {
       document.getElementById('headermenu').style = "position: fixed;left: 0px;top:0px; transition: 0.3s ease-in-out;box-shadow: rgba(3,27,78,.1) 0 2px 4px;";
     }
