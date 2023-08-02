@@ -877,9 +877,13 @@
 }
 
 #footer .footer-menu li{
-   padding: 8px 0px;
+   padding: 5px 0px;
    font-family:'popping-regular';
    font-size: 17px;
+}
+#footer .footer-menu li a{
+  color:#fff;
+  text-decoration: none;
 }
 #footer .footer-img1{
   width:100%;
@@ -899,9 +903,14 @@
   list-style: none;
 }
 #footer .footer-menu-2 li{
-  padding: 8px 0px;
+  padding: 6px 0px;
   font-family:'popping-semibold'; 
   font-size: 22px;
+}
+
+#footer .footer-menu-2 li a{
+  color:#fff;
+  text-decoration: none;
 }
 /*
 ##########################

@@ -15,16 +15,18 @@
 .notification p {
     line-height: 50px;
     margin: 0px;
-    padding: 0px;
-    width: 95%;
+    padding: 0px 50px;
+    width: 100%;
     text-align: center;
-    padding-right: 10px;
 }
 
 .notification>img {
+    position: fixed;
     width: 28px;
     cursor: pointer;
     padding-right: 13px;
+    top: 25px;
+    right: 10px;
 }
 
 .noti-show {
@@ -40,7 +42,7 @@
     text-align: center;
     letter-spacing: -.0045em;
     color: #000000;
-    border:2px solid #000;
+    border: 2px solid #000;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 35px;
@@ -280,9 +282,9 @@
 
 #headermenu .headermenu-inner #we-are-hiring {
     position: relative;
-    top: -20px;
+    top: -15px;
     width: 100%;
-    max-width: 160px;
+    max-width: 150px;
     z-index: +9;
 }
 
@@ -788,5 +790,24 @@ ul.nested-submenu {
     #headermenu .headermenu-inner .headermenu-logo img {
         max-width: 170px;
         padding: 18px 10px 18px 0px;
+    }
+
+    .notification>img {
+        padding-right: 13px;
+        top: 25px;
+        right: 10px;
+    }
+ 
+}
+
+@media(max-width:600px) {
+    .notification p {
+        line-height: 40px; 
+        padding: 0px 30px;
+    }
+    .notification>img {
+        padding-right: 13px;
+        top: 10px;
+        right:3px;
     }
 }

@@ -233,5 +233,54 @@ body{
   }
   
   
+.button--primary {
+  background-color: #ffc514;
+  border-color: #ffc514;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button--secondary {
+  background-color: #fff;
+  border-color: #fff;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button {
+  font-family: popping-semibold;
+  font-size: 20px;
+  border-radius: 999px;
+  border-width: 1px;
+  border-style: solid;
+  line-height: initial;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.button__inner {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 30px;
+}
+
+@media(max-width:500px) {
+  
+  .button__inner {
+      padding: 12px 22px;
+  }
+
+  .button {
+      font-size: 16px;
+  }
+}
   
   /****** Font Family ******/
