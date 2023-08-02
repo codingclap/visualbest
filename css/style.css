@@ -887,7 +887,7 @@
 }
 #footer .footer-img1{
   width:100%;
-  max-width: 220px;
+  max-width: 230px;
 }
 #footer .footer-img2{
   width:100%;
@@ -1027,7 +1027,7 @@
     max-width:350px; 
   }
   #footer .footer-img1{ 
-    max-width: 350px;
+    max-width: 200px;
   }
   
   #footer ul.footer-menu-2{
