@@ -180,6 +180,9 @@ body{
   [data-para="16px"] {
     font-size: 16px;
   }
+  [data-para="15px"] {
+    font-size: 15px;
+  }
 
   [data-para="1.4em"] {
     font-size: 1.4em;
