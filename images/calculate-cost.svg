@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 558.64 529.76">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffdc14;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        fill: #455765;
+      }
+
+      .cls-2 {
+        fill: #4191cf;
+      }
+
+      .cls-6 {
+        font-size: 15.48px;
+      }
+
+      .cls-6, .cls-7, .cls-8 {
+        font-family: Poppins-SemiBold, Poppins;
+        font-weight: 600;
+      }
+
+      .cls-6, .cls-8, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-9 {
+        fill: #fff590;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-7, .cls-8 {
+        font-size: 17.46px;
+      }
+
+      .cls-10 {
+        font-family: Poppins-Bold, Poppins;
+        font-size: 53.94px;
+        font-weight: 700;
+      }
+
+      .cls-11 {
+        fill: #008b80;
+      }
+
+      .cls-12 {
+        fill: #4eb5f8;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <circle class="cls-4" cx="163.81" cy="365.95" r="162.31"/>
+      <circle class="cls-2" cx="394.83" cy="365.95" r="162.31"/>
+      <circle class="cls-1" cx="279.32" cy="163.81" r="162.31"/>
+      <path class="cls-12" d="m239.92,321.38s33.83,11.01,79.46-.52c0,0,32.73,79.28-39.74,158.83,0,0-69.2-63.75-39.72-158.31Z"/>
+      <text class="cls-10" transform="translate(197.14 155.74)"><tspan x="0" y="0">GOOD</tspan></text>
+      <text class="cls-10" transform="translate(32.27 393.54)"><tspan x="0" y="0">CHEAP</tspan></text>
+      <text class="cls-10" transform="translate(365.03 393.54)"><tspan x="0" y="0">FAST</tspan></text>
+      <path class="cls-9" d="m124.32,209.05s79.79-28.6,153.57,42.9c0,0-27.32,28.47-37.97,69.43,0,0-90.51-16.87-115.61-112.33Z"/>
+      <path class="cls-11" d="m434.89,209.05s-79.79-28.6-153.57,42.9c0,0,27.32,28.47,37.97,69.43,0,0,90.51-16.87,115.61-112.33Z"/>
+      <text class="cls-7" transform="translate(241.48 384.81)"><tspan x="0" y="0">AVERAGE</tspan></text>
+      <path class="cls-5" d="m279.58,252.6s-32.19,26.98-39.66,68.78c0,0,45.9,12.04,79.46-.52,0,0-10.88-43.35-39.8-68.26Z"/>
+      <text class="cls-8" transform="translate(321.34 258.58)"><tspan x="0" y="0">COSTLY</tspan></text>
+      <text class="cls-7" transform="translate(178.67 258.58)"><tspan x="0" y="0">SLOW</tspan></text>
+      <text class="cls-6" transform="translate(253.13 312.11)"><tspan x="0" y="0">SORRY!</tspan></text>
+      <circle class="cls-3" cx="394.83" cy="365.95" r="162.31"/>
+      <circle class="cls-3" cx="163.81" cy="365.95" r="162.31"/>
+      <circle class="cls-3" cx="279.32" cy="163.81" r="162.31"/>
+    </g>
+  </g>
+</svg>
