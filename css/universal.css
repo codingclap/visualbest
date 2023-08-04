@@ -215,13 +215,14 @@ body{
       font-size: 22px;
     }
     [data-para="22px"] {
-      font-size: 17px;
+      font-size: 16px;
     }
+    
     [data-para="20px"] {
-      font-size: 17px;
+      font-size: 16px;
     }
     [data-para="18px"] {
-      font-size: 17px;
+      font-size: 16px;
     }
     
   }
