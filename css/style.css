@@ -852,6 +852,9 @@
 #section-16 .accordion-button:not(.collapsed)::after{
   background-image:url('../images/minus.png');
 }
+.accordion-item { 
+  border: 2px solid var(--bs-accordion-border-color);
+}
 /*
 ##########################
 ### Section 16 - End

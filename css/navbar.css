@@ -494,6 +494,10 @@ ul.nested-submenu {
 
 .nested-submenu-container .nested-submenu li.secondary-menu {}
 
+.nested-submenu-container .nested-submenu li.secondary-menu:hover a{
+    color:red;
+}
+
 .nested-submenu-container .nested-submenu li.secondary-menu a {
     text-align: left;
     position: relative;
