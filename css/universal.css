@@ -1,258 +1,315 @@
-body{
-    font-size: 100%;
-    color:#000000;
-    box-sizing: border-box;
-  }
-  
-  :root{
-   --black:#000;
-   --white:#fff;
-   --blue:#4193d1;
-   --primary:#ffc514;
-   --primary2:#d4af37;
-   --red:#ff6200; 
-   --dark:#2b2a2b;
-   --light-dark:#282828;
-  }
-  @font-face {
-    font-family: spring;
-    src: url(../fonts/spring_rain_solid.otf);
-    font-weight: 700;
-     
-  }
-  @font-face {
-    font-family: popping-bold;
-    src: url(../fonts/Poppins-Bold.ttf);
-    font-weight: 700; 
-  }
-  @font-face {
-    font-family: popping-regular;
-    src: url(../fonts/Poppins-Regular.ttf);
-    font-weight: 200;
-  }
-  @font-face {
-    font-family: popping-semibold;
-    src: url(../fonts/Poppins-SemiBold.ttf);
-    font-weight: 400;
-  }
-   
-  /********** Font Family - Variable *********/
-  [data-font-style="spring"] {
-    font-family: spring;
-  }
-  [data-font-style="popping-bold"] {
-    font-family: popping-bold;
-  }
-  [data-font-style="popping-regular"] {
-    font-family: popping-regular;
-  }
-  [data-font-style="popping-semibold"] {
-    font-family: popping-semibold;
-  }
-  /********** Font Family - Variable *********/
-  /********** Default Color *********/
-  /*** BG Color **/
-  [data-bgcolor="white"] {
-    background-color:#fff;
-  }
-  [data-bgcolor="blue"] {
-    background-color:#4193d1;
-  }
-  [data-bgcolor="primary"] {
-    background-color:#ffc514;
-  }
-  [data-bgcolor="primary2"] {
-    background-color:#d4af37;
-  }
-  [data-bgcolor="gray"] {
-    background-color:#f0f0f0;
-  }
-  [data-bgcolor="dark"] {
-    background-color:#2b2a2b;
-  }
-  [data-bgcolor="footer"] {
-    background-color:#212a31;
-  }
-  
-  /** Color **/
-  [data-color="black"] {
-    color:#000000;
-  }
-  [data-color="primary"] {
-    color:#ffc514;
-  }
-  [data-color="red"] {
-    color:#ff6200;
-  }
-  [data-color="primary2"] {
-    color:#d4af37;
-  }
-  [data-color="light-dark"] {
-    color:#282828;
-  }
-  [data-color="light"] {
-    color:#a3a3a3;
-  }
-  
-  [data-color="white"] {
-    color:#fff;
-  }
-  
+body {
+  font-size: 100%;
+  color: #000000;
+  box-sizing: border-box;
+}
 
-  /********** Default Color *********/
-  
-  /********** Default Line Height *********/
-  [line-height="1.6em"]{
-    line-height: 1.6em;
-  }
-  [line-height="1.5em"]{
-    line-height: 1.5em;
-  }
-  [line-height="1.4em"]{
-    line-height: 1.4em;
-  }
-  [line-height="1.3em"]{
-    line-height: 1.3em;
-  }
-  [line-height="1.2em"]{
-    line-height: 1.2em;
-  }
-  /********** Default Line Height*********/
+:root {
+  --black: #000;
+  --white: #fff;
+  --blue: #4193d1;
+  --primary: #ffc514;
+  --primary2: #d4af37;
+  --red: #ff6200;
+  --dark: #2b2a2b;
+  --light-dark: #282828;
+
+}
+
+@font-face {
+  font-family: spring;
+  src: url(../fonts/spring_rain_solid.otf);
+  font-weight: 700;
+
+}
+
+@font-face {
+  font-family: popping-bold;
+  src: url(../fonts/Poppins-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: popping-regular;
+  src: url(../fonts/Poppins-Regular.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: popping-semibold;
+  src: url(../fonts/Poppins-SemiBold.ttf);
+  font-weight: 400;
+}
+
+/********** Font Family - Variable *********/
+[data-font-style="spring"] {
+  font-family: spring;
+}
+
+[data-font-style="popping-bold"] {
+  font-family: popping-bold;
+}
+
+[data-font-style="popping-regular"] {
+  font-family: popping-regular;
+}
+
+[data-font-style="popping-semibold"] {
+  font-family: popping-semibold;
+}
+
+/********** Font Family - Variable *********/
+/********** Default Color *********/
+/*** BG Color **/
+[data-bgcolor="white"] {
+  background-color: #fff;
+}
+
+[data-bgcolor="blue"] {
+  background-color: #4193d1;
+}
+
+[data-bgcolor="primary"] {
+  background-color: #ffc514;
+}
+
+[data-bgcolor="primary2"] {
+  background-color: #d4af37;
+}
+
+[data-bgcolor="gray"] {
+  background-color: #f0f0f0;
+}
+
+[data-bgcolor="dark"] {
+  background-color: #2b2a2b;
+}
+
+[data-bgcolor="footer"] {
+  background-color: #212a31;
+}
+
+/** Color **/
+[data-color="black"] {
+  color: #000000;
+}
+
+[data-color="primary"] {
+  color: #ffc514;
+}
+
+[data-color="red"] {
+  color: #ff6200;
+}
+
+[data-color="primary2"] {
+  color: #d4af37;
+}
+
+[data-color="light-dark"] {
+  color: #282828;
+}
+
+[data-color="light"] {
+  color: #a3a3a3;
+}
+
+[data-color="white"] {
+  color: #fff;
+}
+
+[data-color="light-gray"] {
+  color: #999999;
+}
+
+[data-color="red"] {
+  color: #D20000;
+}
 
 
-  /********** Default Heading *********/
-   /**** EM Size ***/
-  [data-heading="7em"] {
-    font-size: 7em;
-  }
-  [data-heading="5em"] {
-    font-size: 5em;
-  }
-  [data-heading="4.5em"] {
-    font-size: 4.5em;
-  }
-  [data-heading="4em"] {
-    font-size: 4em;
-  }
-  [data-heading="3.5em"] {
-    font-size: 3.5em;
-  }
-  [data-heading="3em"] {
-    font-size: 3em;
-  }
+/********** Default Color *********/
 
-   /**** Pixels Size ***/
-   [data-heading="30px"] {
-    font-size: 30px;
-  }
-   [data-heading="28px"] {
-    font-size: 28px;
-  }
-   [data-heading="25px"] {
+/********** Default Line Height *********/
+[line-height="1.6em"] {
+  line-height: 1.6em;
+}
+
+[line-height="1.5em"] {
+  line-height: 1.5em;
+}
+
+[line-height="1.4em"] {
+  line-height: 1.4em;
+}
+
+[line-height="1.3em"] {
+  line-height: 1.3em;
+}
+
+[line-height="1.2em"] {
+  line-height: 1.2em;
+}
+
+/********** Default Line Height*********/
+
+
+/********** Default Heading *********/
+/**** EM Size ***/
+[data-heading="7em"] {
+  font-size: 7em;
+}
+
+[data-heading="5em"] {
+  font-size: 5em;
+}
+
+[data-heading="4.5em"] {
+  font-size: 4.5em;
+}
+
+[data-heading="4em"] {
+  font-size: 4em;
+}
+
+[data-heading="3.5em"] {
+  font-size: 3.5em;
+}
+
+[data-heading="3em"] {
+  font-size: 3em;
+}
+
+/**** Pixels Size ***/
+[data-heading="30px"] {
+  font-size: 30px;
+}
+
+[data-heading="28px"] {
+  font-size: 28px;
+}
+
+[data-heading="25px"] {
+  font-size: 25px;
+}
+
+[data-heading="24px"] {
+  font-size: 24px;
+}
+
+[data-heading="22px"] {
+  font-size: 22px;
+}
+
+[data-heading="20px"] {
+  font-size: 20px;
+}
+
+[data-heading="18px"] {
+  font-size: 18px;
+}
+
+/********** Default Heading *********/
+
+/********** Default paragraph *********/
+[data-para="22px"] {
+  font-size: 22px;
+}
+
+[data-para="20px"] {
+  font-size: 20px;
+}
+
+[data-para="18px"] {
+  font-size: 18px;
+}
+
+[data-para="17px"] {
+  font-size: 17px;
+}
+
+[data-para="16px"] {
+  font-size: 16px;
+}
+
+[data-para="15px"] {
+  font-size: 15px;
+}
+
+[data-para="14px"] {
+  font-size: 14px;
+}
+
+[data-para="1.4em"] {
+  font-size: 1.4em;
+}
+
+[data-para="1.3em"] {
+  font-size: 1.3em;
+}
+
+[data-para="1.2em"] {
+  font-size: 1.2em;
+}
+
+/********** Default paragraph *********/
+
+
+
+
+/****** Font Family *******/
+
+@media (max-width:766px) {
+
+  [data-heading="30px"] {
     font-size: 25px;
   }
-  [data-heading="24px"] {
-    font-size: 24px;
+
+  [data-heading="28px"] {
+    font-size: 25px;
   }
-  [data-heading="22px"] {
+
+
+  [data-para="25px"] {
     font-size: 22px;
   }
-  [data-heading="20px"] {
+
+  [data-para="22px"] {
     font-size: 20px;
   }
 
-  [data-heading="18px"] {
-    font-size: 18px;
-  }
-   
-  /********** Default Heading *********/
-  
-  /********** Default paragraph *********/
-  [data-para="22px"] {
-    font-size: 22px;
-  }
   [data-para="20px"] {
-    font-size: 20px;
-  }
-  [data-para="18px"] {
     font-size: 18px;
   }
-  [data-para="17px"] {
-    font-size: 17px;
-  }
-  [data-para="16px"] {
+
+  [data-para="18px"] {
     font-size: 16px;
   }
-  [data-para="15px"] {
-    font-size: 15px;
-  }
-  [data-para="14px"] {
-    font-size: 14px;
+
+}
+
+@media (max-width:500px) {
+  [data-heading="25px"] {
+    font-size: 22px;
   }
 
-  [data-para="1.4em"] {
-    font-size: 1.4em;
+  [data-heading="22px"] {
+    font-size: 20px;
   }
-  [data-para="1.3em"] {
-    font-size: 1.3em;
+
+  [data-para="17px"] {
+    font-size: 16px;
   }
-  [data-para="1.2em"] {
-    font-size: 1.2em;
+
+  [data-para="22px"] {
+    font-size: 16px;
   }
- 
-  /********** Default paragraph *********/
-  
- 
+
+  [data-para="20px"] {
+    font-size: 16px;
+  }
+}
 
 
-  /****** Font Family *******/
-   
-  @media (max-width:766px){
-    
-    [data-heading="30px"] {
-      font-size: 25px;
-    }
-     [data-heading="28px"] {
-      font-size: 25px;
-    }
-
-
-    [data-para="25px"] {
-      font-size: 22px;
-    }
-    [data-para="22px"] {
-      font-size: 20px;
-    }
-    
-    [data-para="20px"] {
-      font-size: 18px;
-    }
-    [data-para="18px"] {
-      font-size: 16px;
-    }
-    
-  }
-  
-  @media (max-width:500px){
-    [data-heading="25px"]{
-      font-size: 22px;
-    }
-    [data-heading="22px"] {
-      font-size: 20px;
-    }
-
-    [data-para="17px"] {
-      font-size: 16px;
-    }
-    [data-para="22px"] {
-      font-size: 16px;
-    } 
-    [data-para="20px"] {
-      font-size: 16px;
-    }
-  }
-  
-  
 .button--primary {
   background-color: #ffc514;
   border-color: #ffc514;
@@ -268,9 +325,11 @@ body{
   text-decoration: none;
   font-weight: bold;
 }
-a:hover{
-  color:inherit;
+
+a:hover {
+  color: inherit;
 }
+
 .button {
   font-family: popping-semibold;
   font-size: 20px;
@@ -295,15 +354,15 @@ a:hover{
 }
 
 @media(max-width:500px) {
-  
+
   .button__inner {
-      padding: 8px 22px;
-      min-height: 40px;
+    padding: 8px 22px;
+    min-height: 40px;
   }
 
   .button {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
-  
-  /****** Font Family ******/
+
+/****** Font Family ******/

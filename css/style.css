@@ -861,6 +861,67 @@
 ##########################
 */
 
+
+
+/*
+##########################
+### Project Model -  Start
+##########################
+*/
+.table-button {
+  width: 100%;
+  max-width: 1076px;
+}
+.table-button-2 a {
+  background-color: #606060;
+  border-color: #606060;
+  color: #fff;
+  border-radius: 0 0 25px 0 !important;
+}
+.table-button-2 {
+  max-width: 560px;
+  background-color: #606060;
+ border-radius: 0 0 25px 0 !important;
+}
+.table-button-1  {
+  max-width: 521px;
+  background-color: #ffc514;
+ border-radius: 0 0 0 25px !important;
+}
+.table-button-1 a {
+  max-width: 521px;
+  background-color: #ffc514;
+    border-radius: 0 0 0 25px !important;
+}
+
+#project-model tr th:nth-child(2) {
+  background-color: #fff6d9;
+}
+
+#project-model tr th:nth-child(3) {
+border-radius: 0 30px 0 0;
+}
+
+.gay-color {
+  background-color: #e6e6e6 !important;
+}
+.light-gray {
+
+  background-color: #f2f2f2 !important;
+}
+/*
+##########################
+### Project Model - End
+##########################
+*/
+
+
+
+
+
+
+
+
 /*
 ##########################
 ### Footer Section
@@ -994,6 +1055,21 @@
   #section-1 .banner-text .banner-hero_trigger {
     text-align: center;
   }
+  
+.table-button-2 {
+  max-width: 100%;
+  border-radius: 0 0 00 !important;
+}
+  
+.table-button {
+    width: 100%;
+    max-width: 100%;
+
+}
+#project-model .yello {
+  background-color: #fff6d9;
+}
+  
 }
 
 @media(max-width:768px) {

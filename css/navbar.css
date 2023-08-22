@@ -310,6 +310,7 @@
 .headermenu-main ul.headermenu-firstmenu li {
     list-style: none;
     text-decoration: none;
+    cursor:pointer;
 }
 
 .headermenu-main ul.headermenu-firstmenu li.primary-menu a.primary-links {
