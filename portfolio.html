@@ -960,32 +960,32 @@
 
         let playVideo = document.querySelector('#play-video');
         let videOverlay = document.querySelector('#video-overlay');
-        playVideo.addEventListener('click',(e)=>{
+        playVideo.addEventListener('click', (e) => {
             e.preventDefault();
             videOverlay.classList.add('open');
-            videOverlay.innerHTML='<iframe width="560" height="315" src="https://www.youtube.com/embed/ngElkyQ6Rhs" frameborder="0" allowfullscreen></iframe><a class="video-overlay-close">×</a>';
+            videOverlay.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/ngElkyQ6Rhs" frameborder="0" allowfullscreen></iframe><a class="video-overlay-close">×</a>';
         });
 
-        
+
         let closeOverlay = document.querySelector('.video-overlay,.video-overlay-close');
-        closeOverlay.addEventListener('click',(e)=>{
+        closeOverlay.addEventListener('click', (e) => {
             e.preventDefault();
             close_video();
         })
-        
 
-        $(document).keyup(function (e) {
-            if (e.keyCode === 27) { close_video(); }
-        });
+ 
+        document.addEventListener('onkeyup', (e) => {
+            alert("hello");
+        })
 
-        
+
         function close_video() {
             let videoOverlayOpen = document.querySelector('.video-overlay,.open');
             videoOverlayOpen.classList.remove('open');
             document.querySelector('#iframe').remove();
 
         };
-       
+
     </script>
     <!---------------------- Watch Our Showreel End ---------------------->
 
