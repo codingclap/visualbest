@@ -978,11 +978,14 @@
             if (e.keyCode === 27) { close_video(); }
         });
 
+        
         function close_video() {
             let videoOverlayOpen = document.querySelector('.video-overlay,.open');
-            videoOverlayOpen.classList.remove('open').find('iframe').remove();
-            
+            videoOverlayOpen.classList.remove('open');
+            document.querySelector('#iframe').remove();
+
         };
+       
     </script>
     <!---------------------- Watch Our Showreel End ---------------------->
 
