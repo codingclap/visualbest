@@ -632,7 +632,7 @@
 
   <!---------------------- Section 1 ---------------------->
   <link rel="stylesheet" media="screen" href="css/searchbar.css" />
-  <section id="section-1" class="overflow-hidden pt-5 pb-5">
+  <section id="section-1" class="pt-5 pb-5">
     <div class="container">
       <div class="banner-flex">
         <!-------------- Banner Text ---------------->
@@ -651,7 +651,7 @@
           <!--- Search Btn -->
           <div class="banner-hero_trigger" id="first-search" data-carousel="hero-carousel" data-carousel-step="3">
             <div class="homepage-hero__search">
-              <div class="cta-pair cta-pair--no-margin cta-pair--centered">
+              <div class="cta-pair cta-pair--no-margin cta-pair--centered" id="proposal-btn" >
                 <div class="cta-pair__button  py-3 pe-1 pe-md-4">
                   <div data-category-search-field="" class="field field--icon-label field--homepage-search-input">
                     <div class="field__input">
@@ -678,9 +678,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="cta-pair__button">
-                  <a data-category-search-cta="" class="button button--jumbo button--primary button--responsive"
-                    href="/categories" data-font-style="popping-semibold">
+                <div class="cta-pair__button" >
+                  <a class="button button--jumbo button--primary button--responsive"
+                    href="javascript:void(0)" onclick="redirect()" data-font-style="popping-semibold">
                     <span class="button__inner">
                       <span class="button__label">
                         Get a Proposal</span>
@@ -693,6 +693,23 @@
           <!--- Search Btn -->
         </div>
         <!-------------- Banner Text ---------------->
+        <script>
+          let redirect = () => {
+            let getBtnElement = document.querySelector('#proposal-btn');
+            let createBtnChild = document.createElement('p');
+            createBtnChild.innerText="Thank you for your interest! Let’s schedule a call.";
+            createBtnChild.className="text-end";
+            createBtnChild.dataset.para="16px";
+            createBtnChild.dataset.fontStyle="popping-regular";
+            createBtnChild.dataset.color="light-dark";
+            getBtnElement.appendChild(createBtnChild);
+           
+            let setTime = setTimeout(function () {
+              window.location.href = "https://www.google.com";
+              window.clearTimeout(setTime);		 
+            }, 2000);
+          }
+        </script>
 
         <!-------------- Banner Sliders ---------------->
         <div class="banner-slider">
@@ -2299,27 +2316,28 @@
             <li><a href="">REQUEST QUOTATION</a></li>
             <li><a href="">CONTACT US</a></li>
           </ul>
-        </div> 
+        </div>
       </div>
 
       <div class="row pt-3">
         <div class="col-12 col-md-12 col-lg-12 pt-3">
           <div class="row d-flex flex-row justify-content-center align-items-center gap-4 gap-lg-0">
-            <div class="col-12 col-md-12 col-lg-6 col-xl-6 text-center"> 
-                <h5 data-font-style="popping-semibold" data-heading="22px" data-color="white">Contact for Sales &
-                  Support</h5>
-                <div class="row text-center d-flex justify-content-center">
-                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 pt-2 pt-md-1" data-font-style="popping-regular" data-para="16px" data-color="white">+91
-                    8595673328</div>
-                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 pt-2 pt-md-1"><a href="mailto:Info@visualbest.co" data-font-style="popping-regular"
-                      data-para="16px" data-color="white">Info@visualbest.co</a></div>
-                </div> 
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 text-center">
+              <h5 data-font-style="popping-semibold" data-heading="22px" data-color="white">Contact for Sales &
+                Support</h5>
+              <div class="row text-center d-flex justify-content-center">
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4 pt-2 pt-md-1" data-font-style="popping-regular"
+                  data-para="16px" data-color="white">+91
+                  8595673328</div>
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4 pt-2 pt-md-1"><a href="mailto:Info@visualbest.co"
+                    data-font-style="popping-regular" data-para="16px" data-color="white">Info@visualbest.co</a></div>
+              </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 text-center">
               <p class="mb-0" data-font-style="popping-regular" data-para="14px" data-color="white">©2016-2024 Visual
                 Best Pvt. Ltd. All Rights Reserved</p>
             </div>
-          </div>  
+          </div>
         </div>
       </div>
     </div>
